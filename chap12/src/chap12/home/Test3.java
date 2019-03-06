@@ -49,7 +49,7 @@ public class Test3 {
 			}
 			
 			System.out.print(String.format("%4d년 ", year)
-							+ String.format("%02d웡", month)
+							+ String.format("%02d월", month)
 							+ String.format("%02d일은 ", day));
 			
 			// 다시 입력한 날짜로 설정
