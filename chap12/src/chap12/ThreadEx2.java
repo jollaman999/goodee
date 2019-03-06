@@ -1,6 +1,6 @@
 package chap12;
 
-class Runname1 implements Runnable { // Thread 클래스 아님.
+class Runnable1 implements Runnable { // Thread 클래스 아님.
 
 	@Override
 	public void run() {
@@ -23,7 +23,7 @@ public class ThreadEx2 {
 	public static void main(String[] args) {
 		System.out.println("main 스레드 시작");
 		
-		Runnable r = new Runname1();
+		Runnable r = new Runnable1();
 		
 		/*
 		 * new Thread(r, "First")
