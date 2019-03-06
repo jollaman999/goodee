@@ -33,7 +33,7 @@ public class Test2_0306_Thread {
 		sum_threads[3] = new SumThread(601, 800, "t4");
 		sum_threads[4] = new SumThread(801, 1000, "t5");
 		
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < sum_threads.length; i++) {
 			sum_threads[i].start();
 			try {
 				sum_threads[i].join();

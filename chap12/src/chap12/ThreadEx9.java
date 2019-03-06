@@ -27,7 +27,7 @@ public class ThreadEx9 {
 		Thread t2 = new DaemonThread();
 		
 		t1.setDaemon(true); // 데몬 스레드로 설정
-		t2.setDaemon(true); // 대몬 스레드로 설정
+		t2.setDaemon(true); // 데몬 스레드로 설정
 		
 		t1.start();
 		t2.start();
