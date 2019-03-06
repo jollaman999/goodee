@@ -57,8 +57,8 @@ public class Test3 {
 			
 			break;
 		}
-		
-		
+
+		scan.close();
 		
 		int yoil = calendar.get(Calendar.DAY_OF_WEEK) - 1;
 		String yoils[] = {"일", "월", "화", "수", "목", "금", "토"};
