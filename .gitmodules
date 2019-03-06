@@ -1,0 +1,36 @@
+[submodule "kmsclass/chap1"]
+	path = kmsclass/chap1
+	url = https://github.com/kmsclass/chap1
+[submodule "kmsclass/chap2"]
+	path = kmsclass/chap2
+	url = https://github.com/kmsclass/chap2
+[submodule "kmsclass/chap3"]
+	path = kmsclass/chap3
+	url = https://github.com/kmsclass/chap3
+[submodule "kmsclass/chap4"]
+	path = kmsclass/chap4
+	url = https://github.com/kmsclass/chap4
+[submodule "kmsclass/chap5"]
+	path = kmsclass/chap5
+	url = https://github.com/kmsclass/chap5
+[submodule "kmsclass/chap6"]
+	path = kmsclass/chap6
+	url = https://github.com/kmsclass/chap6
+[submodule "kmsclass/chap7"]
+	path = kmsclass/chap7
+	url = https://github.com/kmsclass/chap7
+[submodule "kmsclass/chap8"]
+	path = kmsclass/chap8
+	url = https://github.com/kmsclass/chap8
+[submodule "kmsclass/chap9"]
+	path = kmsclass/chap9
+	url = https://github.com/kmsclass/chap9
+[submodule "kmsclass/chap10"]
+	path = kmsclass/chap10
+	url = https://github.com/kmsclass/chap10
+[submodule "kmsclass/chap11"]
+	path = kmsclass/chap11
+	url = https://github.com/kmsclass/chap11
+[submodule "kmsclass/chap12"]
+	path = kmsclass/chap12
+	url = https://github.com/kmsclass/chap12
