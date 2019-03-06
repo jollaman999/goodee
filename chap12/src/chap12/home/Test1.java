@@ -37,23 +37,23 @@ public class Test1 {
 			break;
 		}
 		
-		
 		scan.close();
 		
 		avg = sum / nums.length;
 		
 		Arrays.sort(nums);
 		
-		int mid_value = (nums[0] + nums[nums.length - 1]) / 2;
-		int mid_gap = Math.abs(nums[0] - mid_value);
-		mid = nums[0];
-		
-		for (int i = 1; i < nums.length; i++) {
-			if (Math.abs(nums[i] - mid_value) < mid_gap) {
-				mid = nums[i];
-				mid_gap = Math.abs(nums[i] - mid_value);
-			}
-		}
+//		int mid_value = (nums[0] + nums[nums.length - 1]) / 2;
+//		int mid_gap = Math.abs(nums[0] - mid_value);
+//		mid = nums[0];
+//		
+//		for (int i = 1; i < nums.length; i++) {
+//			if (Math.abs(nums[i] - mid_value) < mid_gap) {
+//				mid = nums[i];
+//				mid_gap = Math.abs(nums[i] - mid_value);
+//			}
+//		}
+		mid = nums[2];
 		
 		System.out.println("Æò±Õ°ª : " + avg + ", " + "Áß¾Ó°ª : " + mid);
 	}
