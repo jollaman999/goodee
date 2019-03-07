@@ -37,9 +37,6 @@ public class Test2_0306_Runnable {
 		
 		for (int i = 0; i < sum_runnables.length; i++) {
 			sum_threads[i] = new Thread(sum_runnables[i]);
-		}
-		
-		for (int i = 0; i < sum_threads.length; i++) {
 			sum_threads[i].start();
 		}
 		
