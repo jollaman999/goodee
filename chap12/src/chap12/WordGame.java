@@ -1,4 +1,4 @@
-package chap12.home;
+package chap12;
 
 import java.util.Scanner;
 import java.util.Vector;
