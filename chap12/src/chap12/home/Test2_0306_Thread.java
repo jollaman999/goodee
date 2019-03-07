@@ -23,7 +23,7 @@ class SumThread extends Thread {
 
 public class Test2_0306_Thread {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		SumThread[] sum_threads = new SumThread[5];
 		int all_sum = 0;
 		
@@ -35,12 +35,10 @@ public class Test2_0306_Thread {
 		
 		for (int i = 0; i < sum_threads.length; i++) {
 			sum_threads[i].start();
-			try {
-				sum_threads[i].join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			
+		}
+		
+		for (int i = 0; i < sum_threads.length; i++) {
+			sum_threads[i].join();
 			all_sum += sum_threads[i].sum;
 		}
 		
