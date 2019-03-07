@@ -34,3 +34,6 @@
 [submodule "kmsclass/chap12"]
 	path = kmsclass/chap12
 	url = https://github.com/kmsclass/chap12
+[submodule "kmsclass/chap15"]
+	path = kmsclass/chap15
+	url = https://github.com/kmsclass/chap15
