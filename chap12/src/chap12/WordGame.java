@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /*
- * 텍스트 기반의 타자연습 프로그램 작성하아
+ * 텍스트 기반의 타자연습 프로그램 작성하라
  * WordGenerator 라는 스레드를 이용하여 2초마다 단어를 하나씩 추가함.
  * 사용자가 단어를 입력하면 Vector 에서 일치하는 단어를 Vector 에서 삭제하도록 함.
  * 모든 데이터가 삭제되면 프로그램 종료,
