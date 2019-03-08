@@ -88,7 +88,7 @@ class Rectangle extends Shape {
 public class ListEx3 {
 
 	public static void main(String[] args) {
-		// list : Shape °´Ã¼¸¸ ÀúÀå. Shape Å¬·¡½ºÀÇ ÇÏÀ§ Å¬·¡½º °´Ã¼¸¦ ÀúÀå.
+		// list : Shape ê°ì²´ë§Œ ì €ì¥. Shape í´ë˜ìŠ¤ì˜ í•˜ìœ„ í´ë˜ìŠ¤ ê°ì²´ë¥¼ ì €ì¥.
 		List<Shape> list = new ArrayList<Shape>();
 		list.add(new Circle(5));
 		list.add(new Circle(10, 10, 3));
@@ -98,7 +98,7 @@ public class ListEx3 {
 		list.add(new Rectangle(3, 3, 5, 10));
 		
 		for (Shape s : list) {
-			System.out.println(s); // x, y, r || w, h, area, length Ãâ·Â
+			System.out.println(s); // x, y, r || w, h, area, length ì¶œë ¥
 		}
 	}
 

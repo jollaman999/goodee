@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
- * È­¸é¿¡¼­ 5¸íÀÇ Á¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ Æò±Õ°ú Áß°£°ªÀ» Ãâ·ÂÇÏ°í, ÃÖ°íÁ¡À» ¹ŞÀº ÇĞ»ıÀÇ ÀÎµ¦½º¸¦ Ãâ·ÂÇÏ±â
+ * í™”ë©´ì—ì„œ 5ëª…ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ í‰ê· ê³¼ ì¤‘ê°„ê°’ì„ ì¶œë ¥í•˜ê³ , ìµœê³ ì ì„ ë°›ì€ í•™ìƒì˜ ì¸ë±ìŠ¤ë¥¼ ì¶œë ¥í•˜ê¸°
  */
 public class Exam1 {
 
@@ -18,12 +18,12 @@ public class Exam1 {
 		int mid = 0;
 		int max = 0;
 		
-		System.out.println("5¸íÀÇ Á¡¼ö¸¦ ÀÔ·Â ÇÏ½Ã¿À : ");
+		System.out.println("5ëª…ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì‹œì˜¤ : ");
 		
 		boolean error = false;
 		
 		while(true) {
-			System.out.print("¼ıÀÚ 5°³¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+			System.out.print("ìˆ«ì 5ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 			
 			for (int i = 0; i < 5; i++) {
 				int num = scan.nextInt();
@@ -37,10 +37,10 @@ public class Exam1 {
 			}
 			
 			if (error) {
-				System.out.println("1~99 ¹üÀ§ ¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä!");
+				System.out.println("1~99 ë²”ìœ„ ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”!");
 				al = new ArrayList<Integer>();
 				error = false;
-				scan.nextLine(); // ÀÔ·Â ¹öÆÛ ºñ¿ì±â
+				scan.nextLine(); // ì…ë ¥ ë²„í¼ ë¹„ìš°ê¸°
 				continue;
 			}
 			
@@ -56,7 +56,7 @@ public class Exam1 {
 		mid = al.get(al.size() / 2);
 		max = al.indexOf(Collections.max(al));
 		
-		System.out.println("ÃÖ°íÁ¡ ÀÎµ¦½º : " + max + ", Áß°£°ª : " + mid + ", Æò±Õ : " + avg);
+		System.out.println("ìµœê³ ì  ì¸ë±ìŠ¤ : " + max + ", ì¤‘ê°„ê°’ : " + mid + ", í‰ê·  : " + avg);
 	}
 
 }

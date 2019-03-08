@@ -7,18 +7,18 @@ import java.util.List;
 import java.util.Vector;
 
 /*
- * L¤Ást ¿¹Á¦ : °´Ã¼¸¦ Ãß°¡ÇÑ ¼ø¼­¸¦ À¯ÁöÇÔ.
- * 			ÀÎµ¦½º »ç¿ë°¡´ÉÇÔ. °¡º¯¹è¿­ÀÌ¶ó°í ÇÔ.
- *   ±¸Çö Å¬·¡½º
- *      ArrayList : List ÀÇ ´ëÇ¥ Å¬·¡½ºÀÓ. ¸ğµç ¸Ş¼­µå°¡ µµÀÍÈ­ µÇ¾îÀÖÀ½.
- *      Vector : ArrayList¿Í °°Àº ±â´ÉÀÇ Å¬·¡½º, ¸ğµç ¸Ş¼­µå°¡ µ¿ÀÌÈ­ µÇ¾îÀÖÀ½.
- *      LinkedList : FiFO¸¦ ±¸ÇöÇÑ Å¬·¡½º
+ * Lã…‘st ì˜ˆì œ : ê°ì²´ë¥¼ ì¶”ê°€í•œ ìˆœì„œë¥¼ ìœ ì§€í•¨.
+ * 			ì¸ë±ìŠ¤ ì‚¬ìš©ê°€ëŠ¥í•¨. ê°€ë³€ë°°ì—´ì´ë¼ê³  í•¨.
+ *   êµ¬í˜„ í´ë˜ìŠ¤
+ *      ArrayList : List ì˜ ëŒ€í‘œ í´ë˜ìŠ¤ì„. ëª¨ë“  ë©”ì„œë“œê°€ ë„ìµí™” ë˜ì–´ìˆìŒ.
+ *      Vector : ArrayListì™€ ê°™ì€ ê¸°ëŠ¥ì˜ í´ë˜ìŠ¤, ëª¨ë“  ë©”ì„œë“œê°€ ë™ì´í™” ë˜ì–´ìˆìŒ.
+ *      LinkedList : FiFOë¥¼ êµ¬í˜„í•œ í´ë˜ìŠ¤
  */
 
 public class ListEx1 {
 
 	public static void main(String[] args) {
-		// <Integer> : Á¦³×¸¯ Ç¥Çö. Integer °´Ã¼µé¸¸ÀÇ ¸ğÀÓ.
+		// <Integer> : ì œë„¤ë¦­ í‘œí˜„. Integer ê°ì²´ë“¤ë§Œì˜ ëª¨ì„.
 		// List<Integer> list = new ArrayList<Integer>();
 		List<Integer> list = new LinkedList<Integer>();
 
@@ -32,32 +32,32 @@ public class ListEx1 {
 		System.out.println(list);
 		
 		for (int i = 0; i < list.size(); i++) {
-			System.out.println(i + "¹øÂ° °´Ã¼ : " + list.get(i));
+			System.out.println(i + "ë²ˆì§¸ ê°ì²´ : " + list.get(i));
 		}
 		
 		for (Integer i : list) {
 			System.out.println(i);
 		}
 		
-		// subºÎºĞ list °´Ã¼ ±¸ÇöÇÏ±â
-		// 1¹ø ÀÎµ¦½º ºÎÅÍ 3¹ø ÀÎµ¦½º ±îÁö ºÎºĞ List °´Ã¼ ±¸ÇÏ±â
+		// subë¶€ë¶„ list ê°ì²´ êµ¬í˜„í•˜ê¸°
+		// 1ë²ˆ ì¸ë±ìŠ¤ ë¶€í„° 3ë²ˆ ì¸ë±ìŠ¤ ê¹Œì§€ ë¶€ë¶„ List ê°ì²´ êµ¬í•˜ê¸°
 		List<Integer> list2 = new ArrayList<Integer>(list.subList(1, 4));
 		//List<Integer> list2 = list.subList(1, 4);
-		System.out.println("sort ÀÌÀü list2 : " + list2);
+		System.out.println("sort ì´ì „ list2 : " + list2);
 		System.out.println(list2);
 		
-		// Collections : Å¬·¡½º : Collection °´Ã¼µéÀÇ ¿©·¯ ±â´ÉÀ» ÀúÀåÇÏ°í ÀÖ´Â Å¬·¡½º
-		// Collection : ÀÎÅÍÆäÀÌ½º
+		// Collections : í´ë˜ìŠ¤ : Collection ê°ì²´ë“¤ì˜ ì—¬ëŸ¬ ê¸°ëŠ¥ì„ ì €ì¥í•˜ê³  ìˆëŠ” í´ë˜ìŠ¤
+		// Collection : ì¸í„°í˜ì´ìŠ¤
 		Collections.sort(list);
-		System.out.println("sort ÀÌÈÄ list : " + list);
-		System.out.println("sort ÀÌÈÄ list2 : " + list2);
-		System.out.println("list °´Ã¼ Áß ÃÖ´ë°ª : " + Collections.max(list));
-		System.out.println("list °´Ã¼ Áß ÃÖ¼Ò°ª : " + Collections.min(list));
+		System.out.println("sort ì´í›„ list : " + list);
+		System.out.println("sort ì´í›„ list2 : " + list2);
+		System.out.println("list ê°ì²´ ì¤‘ ìµœëŒ€ê°’ : " + Collections.max(list));
+		System.out.println("list ê°ì²´ ì¤‘ ìµœì†Œê°’ : " + Collections.min(list));
 
-		System.out.println("list2 °´Ã¼ Áß ÃÖ´ë°ª : " + Collections.max(list2));
-		System.out.println("list2 °´Ã¼ Áß ÃÖ´ë°ªÀÇ ÀÎµ¦½º : " + list2.indexOf(Collections.max(list2)));
+		System.out.println("list2 ê°ì²´ ì¤‘ ìµœëŒ€ê°’ : " + Collections.max(list2));
+		System.out.println("list2 ê°ì²´ ì¤‘ ìµœëŒ€ê°’ì˜ ì¸ë±ìŠ¤ : " + list2.indexOf(Collections.max(list2)));
 		
-		System.out.println(list2.indexOf(6)); // ÇØ´ç °´Ã¼ ¾ø´Â °æ¿ì -1 ¸®ÅÏ
+		System.out.println(list2.indexOf(6)); // í•´ë‹¹ ê°ì²´ ì—†ëŠ” ê²½ìš° -1 ë¦¬í„´
 	}
 
 }

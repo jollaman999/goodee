@@ -5,10 +5,10 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /*
- * ÅØ½ºÆ® ±â¹İÀÇ Å¸ÀÚ¿¬½À ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ¶ó
- * WordGenerator ¶ó´Â ½º·¹µå¸¦ ÀÌ¿ëÇÏ¿© 2ÃÊ¸¶´Ù ´Ü¾î¸¦ ÇÏ³ª¾¿ Ãß°¡ÇÔ.
- * »ç¿ëÀÚ°¡ ´Ü¾î¸¦ ÀÔ·ÂÇÏ¸é Vector ¿¡¼­ ÀÏÄ¡ÇÏ´Â ´Ü¾î¸¦ Vector ¿¡¼­ »èÁ¦ÇÏµµ·Ï ÇÔ.
- * ¸ğµç µ¥ÀÌÅÍ°¡ »èÁ¦µÇ¸é ÇÁ·Î±×·¥ Á¾·á,
+ * í…ìŠ¤íŠ¸ ê¸°ë°˜ì˜ íƒ€ìì—°ìŠµ í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ë¼
+ * WordGenerator ë¼ëŠ” ìŠ¤ë ˆë“œë¥¼ ì´ìš©í•˜ì—¬ 2ì´ˆë§ˆë‹¤ ë‹¨ì–´ë¥¼ í•˜ë‚˜ì”© ì¶”ê°€í•¨.
+ * ì‚¬ìš©ìê°€ ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ë©´ Vector ì—ì„œ ì¼ì¹˜í•˜ëŠ” ë‹¨ì–´ë¥¼ Vector ì—ì„œ ì‚­ì œí•˜ë„ë¡ í•¨.
+ * ëª¨ë“  ë°ì´í„°ê°€ ì‚­ì œë˜ë©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ,
  */
 
 public class Test2_WordGame {
@@ -21,34 +21,34 @@ public class Test2_WordGame {
         while (true) {
             Scanner scan = new Scanner(System.in);
 
-            System.out.println("¿öµå°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù!!");
-            System.out.print("¾ğ¾î¸¦ ¼±ÅÃÇÏ¼¼¿ä : ÇÑ±¹¾î(0), ¿µ¾î(1) : ");
+            System.out.println("ì›Œë“œê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤!!");
+            System.out.print("ì–¸ì–´ë¥¼ ì„ íƒí•˜ì„¸ìš” : í•œêµ­ì–´(0), ì˜ì–´(1) : ");
 
             int lang_selection;
             try {
                 lang_selection = scan.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("¾ğ¾î¸¦ Àß ¸ø ¼±ÅÃÇÏ¼Ì½À´Ï´Ù!\n");
+                System.out.println("ì–¸ì–´ë¥¼ ì˜ ëª» ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤!\n");
                 continue;
             }
             if (lang_selection != 0 && lang_selection != 1) {
-                System.out.println("¾ğ¾î¸¦ Àß ¸ø ¼±ÅÃÇÏ¼Ì½À´Ï´Ù!\n");
+                System.out.println("ì–¸ì–´ë¥¼ ì˜ ëª» ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤!\n");
                 continue;
             }
 
             for (int level = 1; level <= max_level; level++) {
-                System.out.println(level + "·¹º§À» ½ÃÀÛÇÕ´Ï´Ù!");
+                System.out.println(level + "ë ˆë²¨ì„ ì‹œì‘í•©ë‹ˆë‹¤!");
                 if (game.play(lang_selection, level, max_level) == 1) {
-                    System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.");
+                    System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
                     return;
                 }
-                System.out.println(level + "·¹º§ Å¬¸®¾î!! ");
+                System.out.println(level + "ë ˆë²¨ í´ë¦¬ì–´!! ");
             }
 
             break;
         }
 
-        System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+        System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
     }
 
     private int play(int lang_selection, int level, int max_level) {
@@ -59,7 +59,7 @@ public class Test2_WordGame {
             Scanner scan = new Scanner(System.in);
 
             System.out.print(words);
-            System.out.println("  (°ÔÀÓÁ¾·á : 0)");
+            System.out.println("  (ê²Œì„ì¢…ë£Œ : 0)");
             String input = scan.nextLine().trim();
 
             if (input.equals("0")) {
@@ -84,8 +84,8 @@ public class Test2_WordGame {
         String data[];
         String[] data_en = {"apple", "banana", "pineapple", "orange", "grape", "cherry", "strawberry",
                             "watermelon", "melon", "coconut", "mango", "lemon", "pear", "peach"};
-        String[] data_ko = {"»ç°ú", "¹Ù³ª³ª", "ÆÄÀÎ¾ÖÇÃ", "¿À·»Áö", "Æ÷µµ", "Ã¼¸®", "µş±â",
-                "¼ö¹Ú", "¸Ş·Ğ", "ÄÚÄÚ³Ó", "¸Á°í", "·¹¸ó", "¹è", "º¹¼ş¾Æ"};
+        String[] data_ko = {"ì‚¬ê³¼", "ë°”ë‚˜ë‚˜", "íŒŒì¸ì• í”Œ", "ì˜¤ë Œì§€", "í¬ë„", "ì²´ë¦¬", "ë”¸ê¸°",
+                "ìˆ˜ë°•", "ë©”ë¡ ", "ì½”ì½”ë„›", "ë§ê³ ", "ë ˆëª¬", "ë°°", "ë³µìˆ­ì•„"};
 
         WordGenerator(int lang_selection, int level, int max_level) {
             setDaemon(true);

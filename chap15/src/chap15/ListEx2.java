@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Vector;
 
 /*
- * Vector ¿¹Á¦ : List Çö Å¬·¡½º
- * 			Collection ÇÁ·¹ÀÓ¿öÅ© ÀÌÀü¿¡ »ç¿ëµÇ´ø Å¬·¡½º
- * 			List ÀÎÅÍÆäÀÌ½ºÀÇ ¸Ş¼­µå¿Í ÀÌÀü¿¡ »ç¿ëµÇ´ø ¸Ş¼­µå°¡ È¥Àç µÇ¾î ÀÖÀ½.
+ * Vector ì˜ˆì œ : List í˜„ í´ë˜ìŠ¤
+ * 			Collection í”„ë ˆì„ì›Œí¬ ì´ì „ì— ì‚¬ìš©ë˜ë˜ í´ë˜ìŠ¤
+ * 			List ì¸í„°í˜ì´ìŠ¤ì˜ ë©”ì„œë“œì™€ ì´ì „ì— ì‚¬ìš©ë˜ë˜ ë©”ì„œë“œê°€ í˜¼ì¬ ë˜ì–´ ìˆìŒ.
  */
 
 public class ListEx2 {
@@ -17,7 +17,7 @@ public class ListEx2 {
 		
 		list.add(0.3);
 		list.add(Math.PI);
-		// list.addElement(5.0); // Vector Å¬·¡½ºÀÇ ¸â¹öÀÓ. List ÀÇ ¸â¹ö°¡ ¾Æ´Ô
+		// list.addElement(5.0); // Vector í´ë˜ìŠ¤ì˜ ë©¤ë²„ì„. List ì˜ ë©¤ë²„ê°€ ì•„ë‹˜
 		list.add(5.0);
 		System.out.println(list);
 		
@@ -25,15 +25,15 @@ public class ListEx2 {
 		int index = list.indexOf(num);
 		
 		if (index < 0) {
-			System.out.println(num + " Àº list¿¡ ¾ø´Â ¿ä¼ÒÀÔ´Ï´Ù.");
+			System.out.println(num + " ì€ listì— ì—†ëŠ” ìš”ì†Œì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(num + " ÀÇ À§Ä¡´Â " + index + "ÀÔ´Ï´Ù.");
+			System.out.println(num + " ì˜ ìœ„ì¹˜ëŠ” " + index + "ì…ë‹ˆë‹¤.");
 		}
 		
 		if (list.contains(num)) {
-			// list.removeElement(num); // Vector Å¬·¡½ºÀÇ ¸â¹öÀÓ. List ÀÇ ¸â¹ö°¡ ¾Æ´Ô.
+			// list.removeElement(num); // Vector í´ë˜ìŠ¤ì˜ ë©¤ë²„ì„. List ì˜ ë©¤ë²„ê°€ ì•„ë‹˜.
 			list.remove(num); 
-			System.out.println(num + " »èÁ¦µÊ.");
+			System.out.println(num + " ì‚­ì œë¨.");
 		}
 		
 		list.remove(0);
