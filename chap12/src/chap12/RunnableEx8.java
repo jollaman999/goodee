@@ -3,13 +3,13 @@ package chap12;
 class InterruptRunnale implements Runnable {
 	@Override
 	public void run() {
-		System.out.println("ÀÚ°í ÀÖ½À´Ï´Ù! ±ú¿ìÁö ¸¶¼¼¿ä!");
+		System.out.println("ìê³  ìˆìŠµë‹ˆë‹¤! ê¹¨ìš°ì§€ ë§ˆì„¸ìš”!");
 		
 		try {
 			Thread.sleep(1000000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			System.out.println("´©°¡ ±ú¿ü´Ï?");
+			System.out.println("ëˆ„ê°€ ê¹¨ì› ë‹ˆ?");
 		}
 	}
 }
@@ -25,7 +25,7 @@ public class RunnableEx8 {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		t1.interrupt(); // t1 ½º·¹µå¿¡ InterruptedException ¿¹¿Ü ¹ß»ıÇÔ
+		t1.interrupt(); // t1 ìŠ¤ë ˆë“œì— InterruptedException ì˜ˆì™¸ ë°œìƒí•¨
 	}
 
 }

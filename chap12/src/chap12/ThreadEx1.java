@@ -1,8 +1,8 @@
 package chap12;
 
 /*
- * Thread °´Ã¼ »ı¼ºÇÏ±â
- * 1. Thread Å¬·¡½º¸¦ »ó¼Ó¹Ş¾Æ ½º·¹µå »ı¼º
+ * Thread ê°ì²´ ìƒì„±í•˜ê¸°
+ * 1. Thread í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì•„ ìŠ¤ë ˆë“œ ìƒì„±
  */
 
 class Thread1 extends Thread {
@@ -11,7 +11,7 @@ class Thread1 extends Thread {
 	}
 	
 	@Override
-	public void run() { // 3. Running »óÅÂ. run ¸Ş¼­µå ½ÇÇà »óÅÂ
+	public void run() { // 3. Running ìƒíƒœ. run ë©”ì„œë“œ ì‹¤í–‰ ìƒíƒœ
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(i + "=" + getName());
 			
@@ -20,33 +20,33 @@ class Thread1 extends Thread {
 			}
 			
 			try {
-				sleep(1000); // 4. ´ë±â »óÅÂ. => ´ë±â »óÅÂ Á¾·á½Ã Runnable »óÅÂ.
+				sleep(1000); // 4. ëŒ€ê¸° ìƒíƒœ. => ëŒ€ê¸° ìƒíƒœ ì¢…ë£Œì‹œ Runnable ìƒíƒœ.
 			} catch (InterruptedException e) {
 				
 			}
 		}
-		System.out.println(getName() + " Á¾·á");
-	} // 5. Dead »óÅÂ
+		System.out.println(getName() + " ì¢…ë£Œ");
+	} // 5. Dead ìƒíƒœ
 }
 
 public class ThreadEx1 {
 
 	public static void main(String[] args) {
-		System.out.println("main ½º·¹µå ½ÃÀÛ");
+		System.out.println("main ìŠ¤ë ˆë“œ ì‹œì‘");
 		
-		Thread1 t1 = new Thread1("First"); // 1. new »óÅÂ
-		Thread1 t2 = new Thread1("Second"); // 2. new »óÅÂ
+		Thread1 t1 = new Thread1("First"); // 1. new ìƒíƒœ
+		Thread1 t2 = new Thread1("Second"); // 2. new ìƒíƒœ
 		
 		/*
-		 * start() : ½º·¹µåÀÇ ½ÃÀÛ
-		 * 1. ½ºÅÃ¿µ¿ªÀ» º´·ÄÈ­ÇÔ.
-		 * 2. ½ºÅÃ¿µ¿ª run() ¸Ş¼­µå È£Ãâ.
+		 * start() : ìŠ¤ë ˆë“œì˜ ì‹œì‘
+		 * 1. ìŠ¤íƒì˜ì—­ì„ ë³‘ë ¬í™”í•¨.
+		 * 2. ìŠ¤íƒì˜ì—­ run() ë©”ì„œë“œ í˜¸ì¶œ.
 		 */
 		
-		t1.run(); // 2. Runnable »óÅÂ. ½ÇÇà °¡´É »óÅÂ. °æÇÕ »óÅÂ.
+		t1.run(); // 2. Runnable ìƒíƒœ. ì‹¤í–‰ ê°€ëŠ¥ ìƒíƒœ. ê²½í•© ìƒíƒœ.
 		t2.run();
 		
-		System.out.println("main ½º·¹µå Á¾·á");
+		System.out.println("main ìŠ¤ë ˆë“œ ì¢…ë£Œ");
 	}
 
 }

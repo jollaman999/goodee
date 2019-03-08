@@ -1,8 +1,8 @@
 package chap12;
 
 /*
- * Process : OS »óÅÂ¿¡¼­ ½ÇÇàÁßÀÎ ÇÁ·Î±×·¥
- * Runtime.getRuntime().exec("Process") : OS ·Î ºÎÅÍ ÇÁ·Î¼¼½ºÀÇ ½ÇÇà ±ÇÇÑÀ» ¹Ş±â
+ * Process : OS ìƒíƒœì—ì„œ ì‹¤í–‰ì¤‘ì¸ í”„ë¡œê·¸ë¨
+ * Runtime.getRuntime().exec("Process") : OS ë¡œ ë¶€í„° í”„ë¡œì„¸ìŠ¤ì˜ ì‹¤í–‰ ê¶Œí•œì„ ë°›ê¸°
  */
 
 public class ProcessEx1 {

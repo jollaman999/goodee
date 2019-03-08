@@ -17,7 +17,7 @@ class SumRunnable implements Runnable {
 			sum += i;
 		}
 		System.out.println(Thread.currentThread().getName() + " : " + start
-				+ "~" + end + "±îÁö ÇÕ - " + sum);
+				+ "~" + end + "ê¹Œì§€ í•© - " + sum);
 	}
 }
 
@@ -45,7 +45,7 @@ public class Test2_0306_Runnable {
 			all_sum += sum_runnables[i].sum;
 		}
 		
-		System.out.println("1~1000 ±îÁöÀÇ ÇÕ : " + all_sum);
+		System.out.println("1~1000 ê¹Œì§€ì˜ í•© : " + all_sum);
 	}
 
 }

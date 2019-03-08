@@ -26,9 +26,9 @@ public class Test2 {
 			
 			day += 7;
 			
-			String strDate = "2019³â " + String.format("%02d", month)
-								+ "¿ù " + String.format("%02dÀÏ", day);
-			SimpleDateFormat sf = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ");
+			String strDate = "2019ë…„ " + String.format("%02d", month)
+								+ "ì›” " + String.format("%02dì¼", day);
+			SimpleDateFormat sf = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼");
 			Date d = null;
 			
 			try {

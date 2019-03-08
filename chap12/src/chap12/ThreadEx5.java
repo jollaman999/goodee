@@ -1,10 +1,10 @@
 package chap12;
 
 /*
- * µ¿±âÈ­ ¿¹Á¦ : synchronized ¿¹¾à¾î¸¦ »ç¿ëÇÔ
+ * ë™ê¸°í™” ì˜ˆì œ : synchronized ì˜ˆì•½ì–´ë¥¼ ì‚¬ìš©í•¨
  * 
- * 	1. µ¿±âÈ­ ºí·° <== ¿¹Á¦
- * 	2. µ¿±âÈ­ ¸Ş¼­µå
+ * 	1. ë™ê¸°í™” ë¸”ëŸ­ <== ì˜ˆì œ
+ * 	2. ë™ê¸°í™” ë©”ì„œë“œ
  */
 
 class PrintThread2 extends Thread {
@@ -14,9 +14,9 @@ class PrintThread2 extends Thread {
 		this.ch = ch;
 	}
 	
-	// lock °´Ã¼´Â ¸ğµç ½º·¹µå°¡ °øÀ¯ÇÏ´Â °´Ã¼¿©¾ß ÇÑ´Ù.
-	// lock °´Ã¼´Â ¹İµå½Ã °´Ã¼¿©¾ß ÇÑ´Ù.(Object °´Ã¼ ¶Ç´Â Object »ó¼Ó¹ŞÀº °´Ã¼)
-	// ±âº»ÀÚ·áÇüÀÇ º¯¼ö´Â lock °´Ã¼·Î »ç¿ëÇÒ ¼ö ¾ø´Ù.
+	// lock ê°ì²´ëŠ” ëª¨ë“  ìŠ¤ë ˆë“œê°€ ê³µìœ í•˜ëŠ” ê°ì²´ì—¬ì•¼ í•œë‹¤.
+	// lock ê°ì²´ëŠ” ë°˜ë“œì‹œ ê°ì²´ì—¬ì•¼ í•œë‹¤.(Object ê°ì²´ ë˜ëŠ” Object ìƒì†ë°›ì€ ê°ì²´)
+	// ê¸°ë³¸ìë£Œí˜•ì˜ ë³€ìˆ˜ëŠ” lock ê°ì²´ë¡œ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
 	
 	//static Object Lock = new Object();
 	static Integer Lock = 100;
@@ -24,7 +24,7 @@ class PrintThread2 extends Thread {
 	@Override
 	public void run() {
 		for (int i = 0; i < 20000; i++) {
-			synchronized (Lock) { // ÀÓ°è¿µ¿ª, µ¿±âÈ­ ¿µ¿ª (µ¿±âÈ­ ºí·°)
+			synchronized (Lock) { // ì„ê³„ì˜ì—­, ë™ê¸°í™” ì˜ì—­ (ë™ê¸°í™” ë¸”ëŸ­)
 				for (int j = 0; j < 80; j++) {
 					System.out.print(ch);
 				}

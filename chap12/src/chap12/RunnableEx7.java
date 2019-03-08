@@ -14,15 +14,15 @@ class JoinRunnable implements Runnable {
 public class RunnableEx7 {
 
 	public static void main(String[] args) {
-		System.out.println("½º·¹µå¸¦ ÀÌ¿ëÇÏ¿© 100±îÁöÀÇ ÇÕ ±¸ÇÏ±â");
+		System.out.println("ìŠ¤ë ˆë“œë¥¼ ì´ìš©í•˜ì—¬ 100ê¹Œì§€ì˜ í•© êµ¬í•˜ê¸°");
 		JoinRunnable r1 = new JoinRunnable();
 		Thread t1 = new Thread(r1);
 		t1.start();
 		try {
-			t1.join(); // t1 ½º·¹µå°¡ Á¾¿äÇÒ¶§±îÁö main ¸Ş¼­µå ´ë±â
+			t1.join(); // t1 ìŠ¤ë ˆë“œê°€ ì¢…ìš”í• ë•Œê¹Œì§€ main ë©”ì„œë“œ ëŒ€ê¸°
 		} catch (InterruptedException e) {
 		}
-		System.out.println("°á°ú : " + r1.sum);
+		System.out.println("ê²°ê³¼ : " + r1.sum);
 	}
 
 }

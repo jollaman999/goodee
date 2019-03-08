@@ -13,26 +13,26 @@ public class Test4 {
 		int month = 0;
 		
 		while(true) {
-			System.out.print("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä (Á¾·á : 9999) : ");
+			System.out.print("ë…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ì¢…ë£Œ : 9999) : ");
 			year = scan.nextInt();
 			
 			if (year == 9999) {
-				System.out.println("´Ş·ÂÀ» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ë‹¬ë ¥ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				scan.close();
 				return;
 			}
 			
 			if (year < 1990 || year > 2999) {
-				System.out.println("³âµµ ¹üÀ§ ÃÊ°ú (1990~2999 »çÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!)");
+				System.out.println("ë…„ë„ ë²”ìœ„ ì´ˆê³¼ (1990~2999 ì‚¬ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”!)");
 				continue;
 			}
 			
 			while(true) {
-				System.out.print("¿ùÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+				System.out.print("ì›”ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 				month = scan.nextInt();
 				
 				if (month < 1 || month > 12) {
-					System.out.println("¿ù ¹üÀ§ ÃÊ°ú (1~12 »çÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!)");
+					System.out.println("ì›” ë²”ìœ„ ì´ˆê³¼ (1~12 ì‚¬ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”!)");
 					continue;
 				}
 				
@@ -52,13 +52,13 @@ public class Test4 {
 				}
 			}
 			
-			calendar[0][0] = "ÀÏ    ";
-			calendar[0][1] = "¿ù    ";
-			calendar[0][2] = "È­    ";
-			calendar[0][3] = "¼ö    ";
-			calendar[0][4] = "¸ñ    ";
-			calendar[0][5] = "±İ    ";
-			calendar[0][6] = "Åä    ";
+			calendar[0][0] = "ì¼    ";
+			calendar[0][1] = "ì›”    ";
+			calendar[0][2] = "í™”    ";
+			calendar[0][3] = "ìˆ˜    ";
+			calendar[0][4] = "ëª©    ";
+			calendar[0][5] = "ê¸ˆ    ";
+			calendar[0][6] = "í†     ";
 			
 			int day_count = 0;
 			
@@ -78,7 +78,7 @@ public class Test4 {
 			}
 			
 			System.out.println();
-			System.out.println(String.format("     %4d³â %2d¿ù", year, month));
+			System.out.println(String.format("     %4dë…„ %2dì›”", year, month));
 			System.out.println();
 			
 			for (int i = 0; i < calendar.length; i++) {

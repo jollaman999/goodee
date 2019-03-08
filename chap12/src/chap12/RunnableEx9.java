@@ -22,8 +22,8 @@ public class RunnableEx9 {
 		Thread t1 = new Thread(r);
 		Thread t2 = new Thread(r);
 		
-		t1.setDaemon(true); // µ¥¸ó ½º·¹µå·Î ¼³Á¤
-		t2.setDaemon(true); // ´ë¸ó ½º·¹µå·Î ¼³Á¤
+		t1.setDaemon(true); // ë°ëª¬ ìŠ¤ë ˆë“œë¡œ ì„¤ì •
+		t2.setDaemon(true); // ëŒ€ëª¬ ìŠ¤ë ˆë“œë¡œ ì„¤ì •
 		
 		t1.start();
 		t2.start();

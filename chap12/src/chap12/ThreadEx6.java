@@ -1,11 +1,11 @@
 package chap12;
 
 /*
- * µø±‚»≠ øπ¡¶ 2 : synchronized øπæ‡æÓ∏¶ ªÁøÎ«‘
- * 	1. µø±‚»≠ ∫Ì∑∞
- * 	2. µø±‚»≠ ∏ﬁº≠µÂ <== øπ¡¶
+ * ÎèôÍ∏∞Ìôî ÏòàÏ†ú 2 : synchronized ÏòàÏïΩÏñ¥Î•º ÏÇ¨Ïö©Ìï®
+ * 	1. ÎèôÍ∏∞Ìôî Î∏îÎü≠
+ * 	2. ÎèôÍ∏∞Ìôî Î©îÏÑúÎìú <== ÏòàÏ†ú
  * 
- * 	µø±‚»≠ ∏ﬁº≠µÂ ªÁøÎΩ√ ∞¯¿Ø∞¥√ºø° ¡∏¿Á«ÿæﬂ «—¥Ÿ.
+ * 	ÎèôÍ∏∞Ìôî Î©îÏÑúÎìú ÏÇ¨Ïö©Ïãú Í≥µÏú†Í∞ùÏ≤¥Ïóê Ï°¥Ïû¨Ìï¥Ïïº ÌïúÎã§.
  */
 
 class PrintThread3 extends Thread {
@@ -26,7 +26,7 @@ class PrintThread3 extends Thread {
 }
 
 class Printer {
-	public synchronized void printChar(char ch) { // µø±‚»≠ ∏ﬁº≠µÂ
+	public synchronized void printChar(char ch) { // ÎèôÍ∏∞Ìôî Î©îÏÑúÎìú
 		for (int i = 0; i < 80; i++) {
 			System.out.print(ch);
 		}

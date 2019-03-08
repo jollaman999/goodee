@@ -13,11 +13,11 @@ public class Test3 {
 		Calendar calendar = Calendar.getInstance();;
 		
 		while(true) {
-			System.out.print("³¯Â¥¸¦ ´ÙÀ½°ú °°Àº Çü½ÄÀ¸·Î ÀÔ·ÂÇÏ¼¼¿ä (yyyy/MM/dd) : ");
+			System.out.print("ë‚ ì§œë¥¼ ë‹¤ìŒê³¼ ê°™ì€ í˜•ì‹ìœ¼ë¡œ ì…ë ¥í•˜ì„¸ìš” (yyyy/MM/dd) : ");
 			date = scan.next();
 			
 			if (!Pattern.matches(date_pattern, date)) {
-				System.out.println("³¯Â¥ Çü½ÄÀ» Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù!");
+				System.out.println("ë‚ ì§œ í˜•ì‹ì„ ì˜ëª» ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤!");
 				continue;
 			}
 			
@@ -26,33 +26,33 @@ public class Test3 {
 			int year = Integer.parseInt(date_split[0]);
 			
 			if (year < 1990 || year > 2999) {
-				System.out.println("³âµµ ¹üÀ§¸¦ ÃÊ°ú ÇÏ¿´½À´Ï´Ù!");
+				System.out.println("ë…„ë„ ë²”ìœ„ë¥¼ ì´ˆê³¼ í•˜ì˜€ìŠµë‹ˆë‹¤!");
 				continue;
 			}
 			
 			int month = Integer.parseInt(date_split[1]);
 			
 			if (month < 1 || month > 12) {
-				System.out.println("¿ù ¹üÀ§¸¦ ÃÊ°ú ÇÏ¿´½À´Ï´Ù!");
+				System.out.println("ì›” ë²”ìœ„ë¥¼ ì´ˆê³¼ í•˜ì˜€ìŠµë‹ˆë‹¤!");
 				continue;
 			}
 			
-			// ÇØ´ç ¿ùÀÇ ÃÖ´ë ³¯Â¥ÀÏ¼ö º¸´Ù Å« ³¯Â¥°¡ µé¾î°¡¸é ´ÙÀ½´Ş·Î ³Ñ¾î°¡´Â °Í ¹æÁö
-			// ex) 2019/02/39 ÀÔ·Â½Ã 3¿ù 1ÀÏ·Î ³Ñ¾î°¡°í ÃÖ´ë ³¯Â¥ 31·Î µÊ.
+			// í•´ë‹¹ ì›”ì˜ ìµœëŒ€ ë‚ ì§œì¼ìˆ˜ ë³´ë‹¤ í° ë‚ ì§œê°€ ë“¤ì–´ê°€ë©´ ë‹¤ìŒë‹¬ë¡œ ë„˜ì–´ê°€ëŠ” ê²ƒ ë°©ì§€
+			// ex) 2019/02/39 ì…ë ¥ì‹œ 3ì›” 1ì¼ë¡œ ë„˜ì–´ê°€ê³  ìµœëŒ€ ë‚ ì§œ 31ë¡œ ë¨.
 			calendar.set(year, month - 1, 1);
 			
 			int day = Integer.parseInt(date_split[2]);
 			
 			if (day < 1 || day > calendar.getActualMaximum(Calendar.DATE)) {
-				System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â ³¯Â¥ ÀÔ´Ï´Ù!");
+				System.out.println("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ë‚ ì§œ ì…ë‹ˆë‹¤!");
 				continue;
 			}
 			
-			System.out.print(String.format("%4d³â ", year)
-							+ String.format("%02d¿ù", month)
-							+ String.format("%02dÀÏÀº ", day));
+			System.out.print(String.format("%4dë…„ ", year)
+							+ String.format("%02dì›”", month)
+							+ String.format("%02dì¼ì€ ", day));
 			
-			// ´Ù½Ã ÀÔ·ÂÇÑ ³¯Â¥·Î ¼³Á¤
+			// ë‹¤ì‹œ ì…ë ¥í•œ ë‚ ì§œë¡œ ì„¤ì •
 			calendar.set(year, month - 1, day);
 			
 			break;
@@ -61,9 +61,9 @@ public class Test3 {
 		scan.close();
 		
 		int yoil = calendar.get(Calendar.DAY_OF_WEEK) - 1;
-		String yoils[] = {"ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±İ", "Åä"};
+		String yoils[] = {"ì¼", "ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† "};
 		
-		System.out.println(yoils[yoil] + "¿äÀÏ ÀÔ´Ï´Ù.");
+		System.out.println(yoils[yoil] + "ìš”ì¼ ì…ë‹ˆë‹¤.");
 	}
 
 }

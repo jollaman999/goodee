@@ -16,7 +16,7 @@ public class Test1 {
 		boolean error = false;
 		
 		while(true) {
-			System.out.print("¼ıÀÚ 5°³¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+			System.out.print("ìˆ«ì 5ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 			
 			for (int i = 0; i < nums.length; i++) {
 				nums[i] = scan.nextInt();
@@ -28,9 +28,9 @@ public class Test1 {
 			}
 			
 			if (error) {
-				System.out.println("1~99 ¹üÀ§ ¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä!");
+				System.out.println("1~99 ë²”ìœ„ ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”!");
 				error = false;
-				scan.nextLine(); // ÀÔ·Â ¹öÆÛ ºñ¿ì±â
+				scan.nextLine(); // ì…ë ¥ ë²„í¼ ë¹„ìš°ê¸°
 				continue;
 			}
 			
@@ -55,7 +55,7 @@ public class Test1 {
 //		}
 		mid = nums[2];
 		
-		System.out.println("Æò±Õ°ª : " + avg + ", " + "Áß¾Ó°ª : " + mid);
+		System.out.println("í‰ê· ê°’ : " + avg + ", " + "ì¤‘ì•™ê°’ : " + mid);
 	}
 
 }

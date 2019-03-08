@@ -13,9 +13,9 @@ class ThreadPriority_r implements Runnable {
 			/*
 			 * Thread.toString()
 			 * Thread[First, 1, main]
-			 * First : ½º·¹µå ÀÌ¸§
-			 * 1 : ¿ì¼±¼øÀ§ °ª
-			 * main : ½º·¹µå ±×·ì ÀÌ¸§
+			 * First : ìŠ¤ë ˆë“œ ì´ë¦„
+			 * 1 : ìš°ì„ ìˆœìœ„ ê°’
+			 * main : ìŠ¤ë ˆë“œ ê·¸ë£¹ ì´ë¦„
 			 */
 		}
 	}
@@ -23,9 +23,9 @@ class ThreadPriority_r implements Runnable {
 
 public class RunnableEx3 {
 	public static void main(String[] args) {
-		System.out.println("³ôÀº ¿ì¼± ¼øÀ§  : " + Thread.MAX_PRIORITY);
-		System.out.println("±âº» ¿ì¼± ¼øÀ§  : " + Thread.NORM_PRIORITY);
-		System.out.println("³·Àº ¿ì¼± ¼øÀ§  : " + Thread.MIN_PRIORITY);
+		System.out.println("ë†’ì€ ìš°ì„  ìˆœìœ„  : " + Thread.MAX_PRIORITY);
+		System.out.println("ê¸°ë³¸ ìš°ì„  ìˆœìœ„  : " + Thread.NORM_PRIORITY);
+		System.out.println("ë‚®ì€ ìš°ì„  ìˆœìœ„  : " + Thread.MIN_PRIORITY);
 		
 		ThreadPriority_r r = new ThreadPriority_r();
 		
