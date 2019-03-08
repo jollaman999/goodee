@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Vector;
 
 /*
- * Lㅑst 예제 : 객체를 추가한 순서를 유지함.
+ * List 예제 : 객체를 추가한 순서를 유지함.
  * 			인덱스 사용가능함. 가변배열이라고 함.
  *   구현 클래스
  *      ArrayList : List 의 대표 클래스임. 모든 메서드가 도익화 되어있음.
