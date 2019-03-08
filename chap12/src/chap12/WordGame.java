@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.util.Vector;
 
 /*
- * ÅØ½ºÆ® ±â¹İÀÇ Å¸ÀÚ¿¬½À ÇÁ·Î±×·¥ ÀÛ¼ºÇÏ¾Æ
- * WordGenerator ¶ó´Â ½º·¹µå¸¦ ÀÌ¿ëÇÏ¿© 2ÃÊ¸¶´Ù ´Ü¾î¸¦ ÇÏ³ª¾¿ Ãß°¡ÇÔ.
- * »ç¿ëÀÚ°¡ ´Ü¾î¸¦ ÀÔ·ÂÇÏ¸é Vector ¿¡¼­ ÀÏÄ¡ÇÏ´Â ´Ü¾î¸¦ Vector ¿¡¼­ »èÁ¦ÇÏµµ·Ï ÇÔ.
- * ¸ğµç µ¥ÀÌÅÍ°¡ »èÁ¦µÇ¸é ÇÁ·Î±×·¥ Á¾·á,
+ * í…ìŠ¤íŠ¸ ê¸°ë°˜ì˜ íƒ€ìì—°ìŠµ í”„ë¡œê·¸ë¨ ì‘ì„±í•˜ì•„
+ * WordGenerator ë¼ëŠ” ìŠ¤ë ˆë“œë¥¼ ì´ìš©í•˜ì—¬ 2ì´ˆë§ˆë‹¤ ë‹¨ì–´ë¥¼ í•˜ë‚˜ì”© ì¶”ê°€í•¨.
+ * ì‚¬ìš©ìê°€ ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ë©´ Vector ì—ì„œ ì¼ì¹˜í•˜ëŠ” ë‹¨ì–´ë¥¼ Vector ì—ì„œ ì‚­ì œí•˜ë„ë¡ í•¨.
+ * ëª¨ë“  ë°ì´í„°ê°€ ì‚­ì œë˜ë©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ,
  */
 
 public class WordGame {
@@ -16,7 +16,7 @@ public class WordGame {
 	public static void main(String[] args) {
 		WordGame game = new WordGame();
 		game.play();
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 	
 	private void play() {
