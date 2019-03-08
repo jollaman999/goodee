@@ -1,6 +1,7 @@
 package chap15.home;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 class SutdaCard {
@@ -44,15 +45,16 @@ class SutdaDeck {
     }
 
     void shuffle() {
-        for (int i = 0; i < sc_list.size(); i++) {
-            SutdaCard sc_tmp;
-            int card1_index = (int) (Math.random() * 20); // 0~19
-            int card2_index = (int) (Math.random() * 20); // 0~19
-
-            sc_tmp = sc_list.get(card1_index);
-            sc_list.set(card1_index, sc_list.get(card2_index));
-            sc_list.set(card2_index, sc_tmp);
-        }
+        Collections.shuffle(sc_list);
+//        for (int i = 0; i < sc_list.size(); i++) {
+//            SutdaCard sc_tmp;
+//            int card1_index = (int) (Math.random() * 20); // 0~19
+//            int card2_index = (int) (Math.random() * 20); // 0~19
+//
+//            sc_tmp = sc_list.get(card1_index);
+//            sc_list.set(card1_index, sc_list.get(card2_index));
+//            sc_list.set(card2_index, sc_tmp);
+//        }
     }
 
     SutdaCard pick() {
