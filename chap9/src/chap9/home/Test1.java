@@ -1,7 +1,7 @@
 package chap9.home;
 
 /*
- * OuterÅ¬·¡½ºÀÇ ³»ºÎ Å¬·¡½º InnerÀÇ ¸â¹öº¯¼ö ivÀÇ °ª Ãâ·Â
+ * Outerí´ë˜ìŠ¤ì˜ ë‚´ë¶€ í´ë˜ìŠ¤ Innerì˜ ë©¤ë²„ë³€ìˆ˜ ivì˜ ê°’ ì¶œë ¥
  */
 
 class Outer {

@@ -20,7 +20,7 @@ public class InnerEx4 {
 			public void test() {
 				int num1 = 1;
 				num1++;
-				System.out.println("Interface I °´Ã¼ÀÇ ¸Ş¼­µåÀÓ. num = " + num1);
+				System.out.println("Interface I ê°ì²´ì˜ ë©”ì„œë“œì„. num = " + num1);
 			}
 		};
 		//num++;
@@ -29,7 +29,7 @@ public class InnerEx4 {
 		Abs a = new Abs() {
 			@Override
 			void testmethod() {
-				System.out.println("Ãß»óÅ¬·¡½º abs °´Ã¼ÀÇ testmethod ¸Ş¼­µåÀÓ. num = " + num);
+				System.out.println("ì¶”ìƒí´ë˜ìŠ¤ abs ê°ì²´ì˜ testmethod ë©”ì„œë“œì„. num = " + num);
 				System.out.println("x = " + x);
 				System.out.println("InnerEx4.x = " + new InnerEx4().x);
 			}

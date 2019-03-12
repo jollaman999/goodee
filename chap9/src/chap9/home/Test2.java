@@ -1,7 +1,7 @@
 package chap9.home;
 
 class Outer2 {
-	static class Inner { //³»ºÎÅ¬·¡½ºÀÇ °´Ã¼ÀÇ ÀÚ·áÇü
+	static class Inner { //ë‚´ë¶€í´ë˜ìŠ¤ì˜ ê°ì²´ì˜ ìë£Œí˜•
 		int iv = 200;
 	}
 }

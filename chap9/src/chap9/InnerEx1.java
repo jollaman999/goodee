@@ -1,19 +1,19 @@
 package chap9;
 
 class Outer1 {
-	class InstanceInner extends Object { // ÀÎ½ºÅÏ½º ÁßÃ¸ Å¬·¡½º
+	class InstanceInner extends Object { // ì¸ìŠ¤í„´ìŠ¤ ì¤‘ì²© í´ë˜ìŠ¤
 		int iv = 100;
 		final static int MAX = 200;
 	}
 	
-	static class StaticInner { // static ÁßÃ¸ Å¬·¡½º
+	static class StaticInner { // static ì¤‘ì²© í´ë˜ìŠ¤
 		int iv = 300;
 		static int cv = 400;
 		final static int MAX = 500;
 	}
 	
 	void method() {
-		class LocalInner { // Áö¿ª ÁßÃ¸ Å¬·¡½º
+		class LocalInner { // ì§€ì—­ ì¤‘ì²© í´ë˜ìŠ¤
 			int iv = 600;
 			final static int MAX = 700;
 		}
@@ -29,12 +29,12 @@ class Outer1 {
 public class InnerEx1 {
 
 	public static void main(String[] args) {
-		// ÁßÃ¸Å¬·¡½ºÀÇ °´Ã¼È­
-		// 1. ÀÎ½ºÅÏ½º ÁßÃ¸ Å¬·¡½º
+		// ì¤‘ì²©í´ë˜ìŠ¤ì˜ ê°ì²´í™”
+		// 1. ì¸ìŠ¤í„´ìŠ¤ ì¤‘ì²© í´ë˜ìŠ¤
 		Outer1.InstanceInner ii = new Outer1().new InstanceInner();
 		System.out.println(ii.iv);
 		System.out.println(Outer1.InstanceInner.MAX);
-		// 2. static ÁßÃ¸ Å¬·¡½º
+		// 2. static ì¤‘ì²© í´ë˜ìŠ¤
 		Outer1.StaticInner si = new Outer1.StaticInner();
 		System.out.println(si.iv);
 		System.out.println(Outer1.StaticInner.cv);

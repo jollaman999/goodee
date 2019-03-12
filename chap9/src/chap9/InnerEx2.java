@@ -1,15 +1,15 @@
 package chap9;
 
 /*
- * ¿ÜºÎÅ¬·¡½ºÀÇ private ¸â¹ö¿¡ Á¢±Ù
+ * ì™¸ë¶€í´ë˜ìŠ¤ì˜ private ë©¤ë²„ì— ì ‘ê·¼
  */
 
 class Outer2 {
 	private int outeriv = 10;
 	private static int outercv = 20;
 	
-	class InstanceInner { // ¿ÜºÎÅ¬·¡½º°¡ °´Ã¼È­ µÇ¾î¾ß ³»ºÎÅ¬·¡½ºÀÇ °´Ã¼È­ °¡´É
-		int iiv = outeriv; // ¿ÜºÎÅ¬·¡½ºÀÇ private ¸â¹ö Á¢±Ù °¡´É
+	class InstanceInner { // ì™¸ë¶€í´ë˜ìŠ¤ê°€ ê°ì²´í™” ë˜ì–´ì•¼ ë‚´ë¶€í´ë˜ìŠ¤ì˜ ê°ì²´í™” ê°€ëŠ¥
+		int iiv = outeriv; // ì™¸ë¶€í´ë˜ìŠ¤ì˜ private ë©¤ë²„ ì ‘ê·¼ ê°€ëŠ¥
 		int iiv2 = outercv;
 	}
 	
