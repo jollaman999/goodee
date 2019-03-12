@@ -1,7 +1,7 @@
 package chap8;
 
 /*
- * ¸Å°³º¯¼öÀÇ ÀÚ·áÇüÀ¸·Î ÀÎÅÍÆäÀÌ½º ÀÚ·áÇüÀ» »ç¿ëÇÏ±â : ÁÖ·Î Çã¿ëÀÇ ±â´ÉÀ» °¡Áø´Ù.
+ * ë§¤ê°œë³€ìˆ˜ì˜ ìë£Œí˜•ìœ¼ë¡œ ì¸í„°í˜ì´ìŠ¤ ìë£Œí˜•ì„ ì‚¬ìš©í•˜ê¸° : ì£¼ë¡œ í—ˆìš©ì˜ ê¸°ëŠ¥ì„ ê°€ì§„ë‹¤.
  */
 
 interface Repairable{}
@@ -67,9 +67,9 @@ class SCV extends GroundUnit implements Repairable {
 		if (r instanceof Unit2) {
 			Unit2 u = (Unit2) r;
 			u.hp = u.MAX_HP;
-			System.out.println(r + "¼ö¸® ¿Ï·á");
+			System.out.println(r + "ìˆ˜ë¦¬ ì™„ë£Œ");
 		}
-		// r.hp = r.MAX_HP; Repairable Å¸ÀÔÀº ¸â¹ö°¡ ¾ø´Ù.
+		// r.hp = r.MAX_HP; Repairable íƒ€ì…ì€ ë©¤ë²„ê°€ ì—†ë‹¤.
 	}
 	
 	public String toString() {
@@ -86,8 +86,8 @@ public class InterfaceEx3 {
 		SCV s = new SCV();
 		s.repair(t);
 		s.repair(d);
-		//s.repair(m); Marine °´Ã¼´Â Repairable ÀÎÅÍÆäÀÌ½º¸¦ ±¸±¸ÇöÇÏÁö ¾ÊÀ½
-		// Marine °´Ã¼´Â Repairable ·Î
+		//s.repair(m); Marine ê°ì²´ëŠ” Repairable ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬êµ¬í˜„í•˜ì§€ ì•ŠìŒ
+		// Marine ê°ì²´ëŠ” Repairable ë¡œ
 	}
 
 }

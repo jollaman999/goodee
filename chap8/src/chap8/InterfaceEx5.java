@@ -2,29 +2,29 @@ package chap8;
 
 interface MyInterface1 {
 	default void method1() {
-		System.out.println("MyInterface1 ÀÇ default ¸Ş¼­µå : method1()");
+		System.out.println("MyInterface1 ì˜ default ë©”ì„œë“œ : method1()");
 	}
 	
 	static void staticMethod() {
-		System.out.println("MyInterface1ÀÇ default ¸Ş¼­µå : staticMethod()");
+		System.out.println("MyInterface1ì˜ default ë©”ì„œë“œ : staticMethod()");
 	}
 }
 
 interface MyInterface2 {
 	default void method1() {
-		System.out.println("MyInterface2ÀÇ default ¸Ş¼­µå : method1()");
+		System.out.println("MyInterface2ì˜ default ë©”ì„œë“œ : method1()");
 	}
 	
 	static void staticMethod() {
-		System.out.println("MyInterface2ÀÇ default ¸Ş¼­µå : staticMethod()");
+		System.out.println("MyInterface2ì˜ default ë©”ì„œë“œ : staticMethod()");
 	}
 }
 
-class ImpClass implements MyInterface1, MyInterface2 { // ´ÙÁß ±¸Çö
+class ImpClass implements MyInterface1, MyInterface2 { // ë‹¤ì¤‘ êµ¬í˜„
 	
 	@Override
 	public void method1() {
-		System.out.println("ImpClass Å¬·¡½ºÀÇ method1() ¸Ş¼­µå");
+		System.out.println("ImpClass í´ë˜ìŠ¤ì˜ method1() ë©”ì„œë“œ");
 		MyInterface1.super.method1();
 		MyInterface2.super.method1();
 	}

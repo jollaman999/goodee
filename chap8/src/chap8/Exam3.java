@@ -1,15 +1,15 @@
 package chap8;
 
 /*
- * Animal2 Å¬·¡½º´Â ´ÙÀ½°ú °°´Ù. ±¸µ¿ Å¬·¡½º¸¦ ½ÇÇàÇßÀ»¶§ ´ÙÀ½ÀÇ °á°ú³ª
- * ³ª¿Àµµ·Ï ÇÁ·Î±×·¥ ±¸ÇöÇÏ±â 
- * Flyable ÀÎÅÍÆäÀÌ½º, Dove,Monkey,Eagle Å¬·¡½º ±¸ÇöÇÏ±â
- * [°á°ú]
- * ºñµÑ±â´Â ÀÛÀº ¹ú·¹¸¦ Àâ¾Æ ¸Ô´Â´Ù.
- * ºñµÑ±â´Â ³¯¾Æ ´Ù´Ï´Â »õÀÔ´Ï´Ù.
- * ¿ø¼şÀÌ´Â ³ª¹«¿¡¼­ ¿­¸Å¸¦ µû¼­ ¸Ô´Â´Ù
- * µ¶¼ö¸®´Â ÀÛÀº »õ¸¦ Àâ¾Æ ¸Ô´Â´Ù.
- * µ¶¼ö¸®´Â ¾öÃ» ³ôÀÌ ³¯¾Æ ´Ù´Ñ´Ù.
+ * Animal2 í´ë˜ìŠ¤ëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤. êµ¬ë™ í´ë˜ìŠ¤ë¥¼ ì‹¤í–‰í–ˆì„ë•Œ ë‹¤ìŒì˜ ê²°ê³¼ë‚˜
+ * ë‚˜ì˜¤ë„ë¡ í”„ë¡œê·¸ë¨ êµ¬í˜„í•˜ê¸° 
+ * Flyable ì¸í„°í˜ì´ìŠ¤, Dove,Monkey,Eagle í´ë˜ìŠ¤ êµ¬í˜„í•˜ê¸°
+ * [ê²°ê³¼]
+ * ë¹„ë‘˜ê¸°ëŠ” ì‘ì€ ë²Œë ˆë¥¼ ì¡ì•„ ë¨¹ëŠ”ë‹¤.
+ * ë¹„ë‘˜ê¸°ëŠ” ë‚ ì•„ ë‹¤ë‹ˆëŠ” ìƒˆì…ë‹ˆë‹¤.
+ * ì›ìˆ­ì´ëŠ” ë‚˜ë¬´ì—ì„œ ì—´ë§¤ë¥¼ ë”°ì„œ ë¨¹ëŠ”ë‹¤
+ * ë…ìˆ˜ë¦¬ëŠ” ì‘ì€ ìƒˆë¥¼ ì¡ì•„ ë¨¹ëŠ”ë‹¤.
+ * ë…ìˆ˜ë¦¬ëŠ” ì—„ì²­ ë†’ì´ ë‚ ì•„ ë‹¤ë‹Œë‹¤.
  */
 
 abstract class Animal2 {
@@ -24,7 +24,7 @@ abstract class Animal2 {
 
 class Dove extends Animal2 implements Flyable {
 	Dove() {
-		super("ºñµÑ±â");
+		super("ë¹„ë‘˜ê¸°");
 	}
 	
 	@Override
@@ -40,7 +40,7 @@ class Dove extends Animal2 implements Flyable {
 
 class Monkey extends Animal2 {
 	Monkey() {
-		super("¿ø¼şÀÌ");
+		super("ì›ìˆ­ì´");
 	}
 	
 	@Override
@@ -51,12 +51,12 @@ class Monkey extends Animal2 {
 
 class Eagle extends Animal2 implements Flyable {
 	Eagle() {
-		super("µ¶¼ö¸®");
+		super("ë…ìˆ˜ë¦¬");
 	}
 	
 	@Override
 	void eat() {
-		System.out.println(name + "´Â ÀÛÀº »õ¸¦ Àâ¾Æ ¸Ô´Â´Ù.");
+		System.out.println(name + "ëŠ” ì‘ì€ ìƒˆë¥¼ ì¡ì•„ ë¨¹ëŠ”ë‹¤.");
 	}
 	
 	@Override

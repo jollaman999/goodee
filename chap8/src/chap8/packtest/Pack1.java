@@ -5,13 +5,13 @@ public class Pack1 {
 	
 	void method() {
 		num = 100;
-		System.out.println("chap8.packtest.Pack1 Å¬·¡½ºÀÇ method() ¸Ş¼­µå ÀÓ");
-		// chap8.Single s = chap8.Single.getInstance(); // Single Å¬·¡½ºÀÇ Á¢±ÙÁ¦¾îÀÚ°¡ default ÀÓ
+		System.out.println("chap8.packtest.Pack1 í´ë˜ìŠ¤ì˜ method() ë©”ì„œë“œ ì„");
+		// chap8.Single s = chap8.Single.getInstance(); // Single í´ë˜ìŠ¤ì˜ ì ‘ê·¼ì œì–´ìê°€ default ì„
 	}
 	
 	protected void method2() {
 		num = 200;
-		System.out.println("chap8.packtest.Pack1 Å¬·¡½ºÀÇ method() ¸Ş¼­µå ÀÓ");
+		System.out.println("chap8.packtest.Pack1 í´ë˜ìŠ¤ì˜ method() ë©”ì„œë“œ ì„");
 	}
 
 }
@@ -20,9 +20,9 @@ public class Pack1 {
 class Pack2 {
 	
 	void method() {
-		System.out.println("cahp8.packtest.Pack2 Å¬·¡½ºÀÇ method() ¸Ş¼­µåÀÓ");
+		System.out.println("cahp8.packtest.Pack2 í´ë˜ìŠ¤ì˜ method() ë©”ì„œë“œì„");
 		Pack1 p = new Pack1();
-		p.method(); // Pack2 Å¬·¡½º¿¡¼­ Pack1 Å¬·¡½ºÀÇ method() ¿¡ Á¢±Ù °¡´É
+		p.method(); // Pack2 í´ë˜ìŠ¤ì—ì„œ Pack1 í´ë˜ìŠ¤ì˜ method() ì— ì ‘ê·¼ ê°€ëŠ¥
 		p.method2();
 		// p.num = 300;
 	}

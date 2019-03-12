@@ -1,7 +1,7 @@
 package chap8;
 
 /*
- * ÀÎÅÍÆäÀÌ½ºÀÇ °´Ã¼ »ı¼ºÇÏ±â
+ * ì¸í„°í˜ì´ìŠ¤ì˜ ê°ì²´ ìƒì„±í•˜ê¸°
  */
 
 interface Action {
@@ -15,7 +15,7 @@ public class InterfaceEx6 {
 			
 			@Override
 			public void action() {
-				System.out.println("Action ÀÎÅÍÆäÀÌ½ºÀÇ °´Ã¼³»ºÎÀÇ action() ¸Ş¼­µå");
+				System.out.println("Action ì¸í„°í˜ì´ìŠ¤ì˜ ê°ì²´ë‚´ë¶€ì˜ action() ë©”ì„œë“œ");
 			}
 		};
 		a.action();
@@ -23,7 +23,7 @@ public class InterfaceEx6 {
 			
 			@Override
 			public void action() {
-				System.out.println("Action °´Ã¼·Î ´Ù¸¥ ±â´É ±¸ÇöÇÏ±â");
+				System.out.println("Action ê°ì²´ë¡œ ë‹¤ë¥¸ ê¸°ëŠ¥ êµ¬í˜„í•˜ê¸°");
 			}
 		};
 		a.action();

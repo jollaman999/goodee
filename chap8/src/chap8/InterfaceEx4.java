@@ -1,9 +1,9 @@
 package chap8;
 
 /*
- * jdk 8.0 ÀÌÈÄ Ãß°¡ : ÀÎÅÍÆäÀÌ½ºÀÇ ¸â¹ö·Î ±¸ÇöºÎ¸¦ °¡Áø ¸Ş¼­µå¸¦ °¡Áø´Ù
- * 		default ¸Ş¼­µå
- * 		static ¸Ş¼­µå
+ * jdk 8.0 ì´í›„ ì¶”ê°€ : ì¸í„°í˜ì´ìŠ¤ì˜ ë©¤ë²„ë¡œ êµ¬í˜„ë¶€ë¥¼ ê°€ì§„ ë©”ì„œë“œë¥¼ ê°€ì§„ë‹¤
+ * 		default ë©”ì„œë“œ
+ * 		static ë©”ì„œë“œ
  */
 
 class Parent {
@@ -12,18 +12,18 @@ class Parent {
 
 interface MyInterface {
 	default void method1() { 
-		System.out.println("MyInterface ÀÎÅÍÆäÀÌ½ºÀÇ method1() ¸Ş¼­µå");
+		System.out.println("MyInterface ì¸í„°í˜ì´ìŠ¤ì˜ method1() ë©”ì„œë“œ");
 	}
 	
 	static void staticMethod() {
-		System.out.println("MyInterface ÀÎÅÍÆäÀÌ½ºÀÇ staticMethod() ¸Ş¼­µå");
+		System.out.println("MyInterface ì¸í„°í˜ì´ìŠ¤ì˜ staticMethod() ë©”ì„œë“œ");
 	}
 }
 
 class Child extends Parent implements MyInterface {
 	@Override
-	public void method1() { // default ¸Ş¼­µå ¿À¹ö¶óÀÌµù
-		System.out.println("Child ÀÎÅÍÆäÀÌ½ºÀÇ method1() ¸Ş¼­µå");
+	public void method1() { // default ë©”ì„œë“œ ì˜¤ë²„ë¼ì´ë”©
+		System.out.println("Child ì¸í„°í˜ì´ìŠ¤ì˜ method1() ë©”ì„œë“œ");
 	}
 }
 
@@ -32,9 +32,9 @@ public class InterfaceEx4 {
 	public static void main(String[] args) {
 		Child c = new Child();
 		c.method1();
-		// MyInterface.method1(); // ÀÎ½ºÅÏ½º ¸Ş¼­µå, °´Ã¼È­ ÇÊ¿ä
-		MyInterface.staticMethod(); // Å¬·¡½º ¸Ş¼­µå
-		Parent p = c; // Parent Å¬·¡½º´Â MyInterface ÀÎÅÍÆäÀÌ½ºÀÇ ±¸Çö Å¬·¡½º°¡ ¾Æ´Ô
+		// MyInterface.method1(); // ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œ, ê°ì²´í™” í•„ìš”
+		MyInterface.staticMethod(); // í´ë˜ìŠ¤ ë©”ì„œë“œ
+		Parent p = c; // Parent í´ë˜ìŠ¤ëŠ” MyInterface ì¸í„°í˜ì´ìŠ¤ì˜ êµ¬í˜„ í´ë˜ìŠ¤ê°€ ì•„ë‹˜
 		// p.method1();
 	}
 

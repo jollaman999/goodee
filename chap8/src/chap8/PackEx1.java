@@ -1,23 +1,23 @@
 package chap8;
 
-// import chap8.packtest.Pack1; // Pack1 Å¬·¡½ºÀÇ ÆĞÅ°Áö¸í ¼³Á¤
-import chap8.packtest.*; // chap8.packtest ÆĞÅ°ÁöÀÇ ¸ğµç Å¬·¡½ºÀÇ ÆĞÅ°Áö¸íÀ» »ı·«
+// import chap8.packtest.Pack1; // Pack1 í´ë˜ìŠ¤ì˜ íŒ¨í‚¤ì§€ëª… ì„¤ì •
+import chap8.packtest.*; // chap8.packtest íŒ¨í‚¤ì§€ì˜ ëª¨ë“  í´ë˜ìŠ¤ì˜ íŒ¨í‚¤ì§€ëª…ì„ ìƒëµ
 
 class Test extends Pack1 {
 	
 	void testmethod() {
 		// method();
-		method2(); // protected Á¢±ÙÁ¦¾îÀÚÀÌ¹Ç·Î Á¢±Ù Çã¿ë
+		method2(); // protected ì ‘ê·¼ì œì–´ìì´ë¯€ë¡œ ì ‘ê·¼ í—ˆìš©
 	}
 }
 
 public class PackEx1 {
 
 	public static void main(String[] args) {
-		System.out.println("ÆĞÅ°Áö ¿¹Á¦");
+		System.out.println("íŒ¨í‚¤ì§€ ì˜ˆì œ");
 		Pack1 p = new Pack1();
-		// p.method(); // default ÀÌ±â ¶§¹®¿¡ Á¢±Ù ¾ÈµÊ
-		// p.method2(); // protected ÀÌ±â ¶§¹®¿¡ Á¢±Ù ¾ÈµÊ
+		// p.method(); // default ì´ê¸° ë•Œë¬¸ì— ì ‘ê·¼ ì•ˆë¨
+		// p.method2(); // protected ì´ê¸° ë•Œë¬¸ì— ì ‘ê·¼ ì•ˆë¨
 		Test t = new Test();
 		t.testmethod();
 		Test2 t2 = new Test2();

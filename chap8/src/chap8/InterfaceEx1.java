@@ -9,7 +9,7 @@ interface Attackable {
 	void attack(Unit u);
 }
 
-interface Fightable extends Moveable, Attackable {} // ´ÙÁß»ó¼Ó
+interface Fightable extends Moveable, Attackable {} // ë‹¤ì¤‘ìƒì†
 
 class Unit {
 	int currentHp, x, y;
@@ -19,12 +19,12 @@ class Fighter extends Unit implements Fightable {
 
 	@Override
 	public void move(int x, int y) {
-		System.out.println(x + ", " + y + "ÁÂÇ¥·Î ÀÌµ¿");
+		System.out.println(x + ", " + y + "ì¢Œí‘œë¡œ ì´ë™");
 	}
 
 	@Override
 	public void attack(Unit u) {
-		System.out.println(u + "°ø°İ");
+		System.out.println(u + "ê³µê²©");
 	}
 	
 }
@@ -46,39 +46,39 @@ public class InterfaceEx1 {
 		//System.out.println(fa.currentHp);
 		
 		if (f instanceof Fighter) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Fighter");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Fighter");
 		}
 		if (f instanceof Unit) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Unit");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Unit");
 			Unit u = (Unit) f;
-			System.out.println("u ÂüÁ¶º¯¼ö·Î ÂüÁ¶ °¡´ÉÇÑ ¸â¹ö´Â Object ¸â¹ö¸¦ Á¦¿ÜÇÏ¸é 3°³´Ù");
+			System.out.println("u ì°¸ì¡°ë³€ìˆ˜ë¡œ ì°¸ì¡° ê°€ëŠ¥í•œ ë©¤ë²„ëŠ” Object ë©¤ë²„ë¥¼ ì œì™¸í•˜ë©´ 3ê°œë‹¤");
 			System.out.println(u.currentHp + ", " + u.x + ", " + u.y);
 		}
 		if (f instanceof Moveable) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Moveable");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Moveable");
 			Moveable m = (Moveable)f;
-			System.out.println("m ÂüÁ¶º¯¼ö·Î ÂüÁ¶ °¡´ÉÇÑ ¸â¹ö´Â Object ¸â¹ö¸¦ Á¦¿ÜÇÏ¸é 2°³´Ù");
+			System.out.println("m ì°¸ì¡°ë³€ìˆ˜ë¡œ ì°¸ì¡° ê°€ëŠ¥í•œ ë©¤ë²„ëŠ” Object ë©¤ë²„ë¥¼ ì œì™¸í•˜ë©´ 2ê°œë‹¤");
 			System.out.println(m.MAX);
 			m.move(40, 50);
 		}
 		if (f instanceof Fightable) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Fightable");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Fightable");
 			Fightable fa2 = (Fightable)f;
-			System.out.println("fa2 ÂüÁ¶º¯¼ö·Î ÂüÁ¶ °¡´ÉÇÑ ¸â¹ö´Â Object ¸â¹ö¸¦ Á¦¿ÜÇÏ¸é 3°³´Ù.");
+			System.out.println("fa2 ì°¸ì¡°ë³€ìˆ˜ë¡œ ì°¸ì¡° ê°€ëŠ¥í•œ ë©¤ë²„ëŠ” Object ë©¤ë²„ë¥¼ ì œì™¸í•˜ë©´ 3ê°œë‹¤.");
 			System.out.println(fa2.MAX);
 			fa2.attack(f);
 			fa2.move(30, 40);
 		}
 		if (f instanceof Attackable) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Attackable");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Attackable");
 			Attackable a = (Attackable)f;
-			System.out.println("a ÂüÁ¶º¯¼ö·Î ÂüÁ¶°¡´ÉÇÑ ¸â¹ö´Â Object ¸â¹ö¸¦ Á¦¿ÜÇÏ¸é 1°³´Ù");
+			System.out.println("a ì°¸ì¡°ë³€ìˆ˜ë¡œ ì°¸ì¡°ê°€ëŠ¥í•œ ë©¤ë²„ëŠ” Object ë©¤ë²„ë¥¼ ì œì™¸í•˜ë©´ 1ê°œë‹¤");
 			a.attack(f);
 		}
 		if (f instanceof Object) {
-			System.out.println("f °¡ ÂüÁ¶ÇÏ´Â °´Ã¼´Â Object");
+			System.out.println("f ê°€ ì°¸ì¡°í•˜ëŠ” ê°ì²´ëŠ” Object");
 			Object o = (Object)f;
-			System.out.println("o ÂüÁ¶º¯¼ö·Î ÂüÁ¶ °¡´ÉÇÑ ¸â¹ö´Â Object ¸â¹ö¸¦ Á¦¿ÜÇÏ¸é 0°³´Ù");
+			System.out.println("o ì°¸ì¡°ë³€ìˆ˜ë¡œ ì°¸ì¡° ê°€ëŠ¥í•œ ë©¤ë²„ëŠ” Object ë©¤ë²„ë¥¼ ì œì™¸í•˜ë©´ 0ê°œë‹¤");
 		}
 	}
 
