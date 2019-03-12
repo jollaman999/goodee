@@ -13,7 +13,7 @@ class Circle extends Shape {
 	int r;
 	
 	Circle(int r) {
-		super("¿ø");
+		super("ì›");
 		this.r = r;
 	}
 
@@ -33,7 +33,7 @@ class Rectangle extends Shape {
 	int height;
 	
 	Rectangle(int width, int height) {
-		super("»ç°¢Çü");
+		super("ì‚¬ê°í˜•");
 		this.width = width;
 		this.height = height;
 	}
@@ -56,7 +56,7 @@ public class ShapeEx1 {
 		shapes[0] = new Circle(10);
 		shapes[1] = new Rectangle(10, 10);
 		for (Shape s : shapes) {
-			System.out.println(s.type + "ÀÇ ³ĞÀÌ : " + s.area() + ", µÑ·¹ : " + s.length());
+			System.out.println(s.type + "ì˜ ë„“ì´ : " + s.area() + ", ë‘˜ë ˆ : " + s.length());
 		}
 	}
 

@@ -13,9 +13,9 @@ class Employee0 {
 	
 	String ShowJungGyu() {
 		if (isjunggyu) {
-			return "Á¤±ÔÁ÷";
+			return "ì •ê·œì§";
 		} else {
-			return "ºñÁ¤±ÔÁ÷";
+			return "ë¹„ì •ê·œì§";
 		}
 	}
 }
@@ -29,7 +29,7 @@ class FormalEmployee0 extends Employee0 {
 	}
 	
 	public String toString() {
-		return super.ShowJungGyu() + ", Á÷¿ø¹øÈ£ : " + num + ", ÀÌ¸§ : " + name + ", ºÎ¼­ : " + buseo;
+		return super.ShowJungGyu() + ", ì§ì›ë²ˆí˜¸ : " + num + ", ì´ë¦„ : " + name + ", ë¶€ì„œ : " + buseo;
 	}
 }
 
@@ -42,33 +42,33 @@ class InFormalEmployee0 extends Employee0 {
 	}
 	
 	public String toString() {
-		return super.ShowJungGyu() + ", ÀÌ¸§ : " + name + ", °è¾à ¸¸·áÀÏ : " + expire;
+		return super.ShowJungGyu() + ", ì´ë¦„ : " + name + ", ê³„ì•½ ë§Œë£Œì¼ : " + expire;
 	}
 }
 
 /*
- * Á÷¿øÅ¬·¡½º (Employee)
- * 		1. º¯¼ö : Á÷¿ø±¸ºĞ, ÀÌ¸§, ¼Ò¼ÓºÎ¼­
- * 		2. »ı¼ºÀÚ :
- * 			¸ğµç ¸â¹ö º¯¼ö¸¦ ¸Å°³º¯¼ö·Î °¡Áü.
- * Á¤±ÔÁ÷¿ø Å¬·¡½º (FormalEmployee)
- * 		1. Á÷¿ø¹øÈ£
- * 		2. »ı¼ºÀÚ :
- * 			Á÷¿ø¹øÈ£, ÀÌ¸§, ¼Ò¼ÓºÎ¼­¸¦ ¸Å°³º¯¼ö·Î °¡Áü.
- * ºñÁ¤±ÔÁ÷¿ø (InformalEmployee)
- * 		1. °è¾à¸¸·áÀÏ
- * 		2. »ı¼ºÀÚ :
- * 			ÀÌ¸§, °è¾à ¸¸·áÀÏÀ» ¸Å°³º¯¼ö·Î °¡Áü.
+ * ì§ì›í´ë˜ìŠ¤ (Employee)
+ * 		1. ë³€ìˆ˜ : ì§ì›êµ¬ë¶„, ì´ë¦„, ì†Œì†ë¶€ì„œ
+ * 		2. ìƒì„±ì :
+ * 			ëª¨ë“  ë©¤ë²„ ë³€ìˆ˜ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ê°€ì§.
+ * ì •ê·œì§ì› í´ë˜ìŠ¤ (FormalEmployee)
+ * 		1. ì§ì›ë²ˆí˜¸
+ * 		2. ìƒì„±ì :
+ * 			ì§ì›ë²ˆí˜¸, ì´ë¦„, ì†Œì†ë¶€ì„œë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ê°€ì§.
+ * ë¹„ì •ê·œì§ì› (InformalEmployee)
+ * 		1. ê³„ì•½ë§Œë£Œì¼
+ * 		2. ìƒì„±ì :
+ * 			ì´ë¦„, ê³„ì•½ ë§Œë£Œì¼ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ê°€ì§.
  */
 
 public class EmployeeEx0 {
 
 	public static void main(String[] args) {
-		FormalEmployee0 fe = new FormalEmployee0("0001", "È«±æµ¿", "°³¹ßºÎ");
-		InFormalEmployee0 ife = new InFormalEmployee0("È«±æµ¿", "20191231");
+		FormalEmployee0 fe = new FormalEmployee0("0001", "í™ê¸¸ë™", "ê°œë°œë¶€");
+		InFormalEmployee0 ife = new InFormalEmployee0("í™ê¸¸ë™", "20191231");
 		
-		System.out.println(fe); // ±¸ºĞ, Á÷¿ø¹øÈ£, ÀÌ¸§, ºÎ¼­ Ãâ·Â
-		System.out.println(ife); // ±¸ºĞ, ÀÌ¸§, °è¾à ¸¸·áÀÏ Ãâ·Â
+		System.out.println(fe); // êµ¬ë¶„, ì§ì›ë²ˆí˜¸, ì´ë¦„, ë¶€ì„œ ì¶œë ¥
+		System.out.println(ife); // êµ¬ë¶„, ì´ë¦„, ê³„ì•½ ë§Œë£Œì¼ ì¶œë ¥
 	}
 
 }

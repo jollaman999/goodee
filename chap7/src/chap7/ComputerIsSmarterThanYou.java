@@ -2,20 +2,20 @@ package chap7;
 
 import java.util.Scanner;
 
-// 0~31 ¼öÁß »ı°¢ÇÑ ¼ıÀÚ ¸ÂÃß±â
-// 5ºñÆ® ¼ö(5ÀÚ¸® 2Áø¼ö ¼ö)¸¦ µÚ¿¡¼­ ºÎÅÍ ÀÚ¸´¼ö°¡ ¸Â´ÂÁö È®ÀÎÇÏ¿© ¼ö¸¦ Ãß·ĞÇÔ
+// 0~31 ìˆ˜ì¤‘ ìƒê°í•œ ìˆ«ì ë§ì¶”ê¸°
+// 5ë¹„íŠ¸ ìˆ˜(5ìë¦¬ 2ì§„ìˆ˜ ìˆ˜)ë¥¼ ë’¤ì—ì„œ ë¶€í„° ìë¦¿ìˆ˜ê°€ ë§ëŠ”ì§€ í™•ì¸í•˜ì—¬ ìˆ˜ë¥¼ ì¶”ë¡ í•¨
 
 public class ComputerIsSmarterThanYou {
 
 	public static void main(String[] args) {
-		boolean dec_ok[] = new boolean[5]; // 2Áø¼ö °¢ ÀÚ¸´¼ö ¸Â´ÂÁö È®ÀÎ 
-		int dec[] = {1, 2, 4, 8, 16}; // 2Áø¼ö ÀÚ¸´¼ö
-		int dec_index = 0; // 2Áø¼ö ÀÚ¸´¼ö È®ÀÎ À§Ä¡
+		boolean dec_ok[] = new boolean[5]; // 2ì§„ìˆ˜ ê° ìë¦¿ìˆ˜ ë§ëŠ”ì§€ í™•ì¸ 
+		int dec[] = {1, 2, 4, 8, 16}; // 2ì§„ìˆ˜ ìë¦¿ìˆ˜
+		int dec_index = 0; // 2ì§„ìˆ˜ ìë¦¿ìˆ˜ í™•ì¸ ìœ„ì¹˜
 		
 		Scanner scan = new Scanner(System.in);
 		
 		while (dec_index < 5) {
-			int cnt = 0; // ÇÑÁÙ´ç 5°³¾¿ ¼ıÀÚ Ç¥½ÃÇÏ±â À§ÇØ Ã¼Å©ÇÒ Ä«¿îÆ®
+			int cnt = 0; // í•œì¤„ë‹¹ 5ê°œì”© ìˆ«ì í‘œì‹œí•˜ê¸° ìœ„í•´ ì²´í¬í•  ì¹´ìš´íŠ¸
 			
 			for (int i = 0; i < 5; i++) { // 0~31
 				
@@ -26,7 +26,7 @@ public class ComputerIsSmarterThanYou {
 				}
 			}
 			
-			System.out.print("\n\n0~31 ±îÁöÀÇ ¼ö¸¦ »ı°¢ÇÏ°Å¶ó!\n³×°¡ »ı°¢ÇÑ ¼ıÀÚ°¡ ¿©±â ÀÖ´À³Ä? (y / n) : ");
+			System.out.print("\n\n0~31 ê¹Œì§€ì˜ ìˆ˜ë¥¼ ìƒê°í•˜ê±°ë¼!\në„¤ê°€ ìƒê°í•œ ìˆ«ìê°€ ì—¬ê¸° ìˆëŠëƒ? (y / n) : ");
 			
 			while (true) {
 				String input = scan.next();
@@ -36,7 +36,7 @@ public class ComputerIsSmarterThanYou {
 				} else if (input.charAt(0) == 'n' || input.charAt(0) == 'N')  {
 					dec_ok[dec_index] = false;
 				} else {
-					System.out.print("y / n À¸·Î¸¸ ´äÇÏ°Å¶ó! ³×°¡ »ı°¢ÇÑ ¼ıÀÚ°¡ ¿©±â ÀÖ´À³Ä? : ");
+					System.out.print("y / n ìœ¼ë¡œë§Œ ë‹µí•˜ê±°ë¼! ë„¤ê°€ ìƒê°í•œ ìˆ«ìê°€ ì—¬ê¸° ìˆëŠëƒ? : ");
 					continue;
 				}
 				break;
@@ -54,7 +54,7 @@ public class ComputerIsSmarterThanYou {
 			}
 		}
 		
-		System.out.println("ÀÌ°ÍÀÌ ³×°¡ »ı°¢ÇÑ ¼ıÀÚ·Î±¸³ª!!");
+		System.out.println("ì´ê²ƒì´ ë„¤ê°€ ìƒê°í•œ ìˆ«ìë¡œêµ¬ë‚˜!!");
 		System.out.println(num);
 	}
 

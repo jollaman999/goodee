@@ -1,19 +1,19 @@
 package chap7;
 
 /*
- * Food, Fruit, Drink, Snack, Apple, Peach, Cock, Cidar, Biscuit, Cookie Å¬·¡½º ±¸ÇöÇÏ±â
- * ¸ğµç ½Ä·áÇ°(Food)´Â °¡°İ(price)°ú º¸³Ê½ºÆ÷ÀÎÆ®(point)¸¦ °¡Áö°í ÀÖ´Ù.
- * ½Ä·áÇ° °´Ã¼¸¦ »ı¼ºÇÏ±â À§ÇØ¼­´Â °¡°İÀ» ÀÔ·Â¹Ş°í, 1/10À» Æ÷ÀÎÆ®·Î ¼³Á¤ÇÑ´Ù.
- * ½Ä·áÇ°ÀÇ Á¾·ù´Â °úÀÏ(Fruit), À½·á(Drink), °úÀÚ(Snack) Á¾·ù·Î ³ª´«´Ù.
- * °úÀÏÀº ´çµµ(brix)¸¦, À½·á´Â ¿ë·®(ml), °úÀÚ´Â ¹«°Ô(gram) Á¤º¸¸¦ °¡Áö°í ÀÖ´Ù.
- * °úÀÏ¿¡´Â »ç°ú(Apple), º¹¼ş¾Æ(Peach)°¡ ÀÖ°í,
- * À½·á¿¡´Â Äİ¶ó(Cock), »çÀÌ´Ù(Cidar)°¡ ÀÖ°í,
- * °úÀÚ¿¡´Â ºñ½ºÅ¶(Biscuit), ÄíÅ°(Cookie)°¡ ÀÖ´Ù.
- * »ç°ú¿Í º¹¼ş¾Æ´Â °¡°İ°ú ´çµµ¸¦ ÀÔ·Â¹Ş¾Æ °´Ã¼¸¦ »ı¼ºÇÏ°í,
- * Äİ¶ó¿Í »çÀÌ´Ù´Â °¡°İ°ú ¿ë·®À» ÀÔ·Â¹Ş¾Æ °´Ã¼¸¦ »ı¼ºÇÏ°í,
- * ºñ½ºÅ¶°ú ÄíÅ°´Â °¡°İ°ú ¹«°Ô¸¦ ÀÔ·Â¹Ş¾Æ °´Ã¼¸¦ »ı¼ºÇÑ´Ù.
+ * Food, Fruit, Drink, Snack, Apple, Peach, Cock, Cidar, Biscuit, Cookie í´ë˜ìŠ¤ êµ¬í˜„í•˜ê¸°
+ * ëª¨ë“  ì‹ë£Œí’ˆ(Food)ëŠ” ê°€ê²©(price)ê³¼ ë³´ë„ˆìŠ¤í¬ì¸íŠ¸(point)ë¥¼ ê°€ì§€ê³  ìˆë‹¤.
+ * ì‹ë£Œí’ˆ ê°ì²´ë¥¼ ìƒì„±í•˜ê¸° ìœ„í•´ì„œëŠ” ê°€ê²©ì„ ì…ë ¥ë°›ê³ , 1/10ì„ í¬ì¸íŠ¸ë¡œ ì„¤ì •í•œë‹¤.
+ * ì‹ë£Œí’ˆì˜ ì¢…ë¥˜ëŠ” ê³¼ì¼(Fruit), ìŒë£Œ(Drink), ê³¼ì(Snack) ì¢…ë¥˜ë¡œ ë‚˜ëˆˆë‹¤.
+ * ê³¼ì¼ì€ ë‹¹ë„(brix)ë¥¼, ìŒë£ŒëŠ” ìš©ëŸ‰(ml), ê³¼ìëŠ” ë¬´ê²Œ(gram) ì •ë³´ë¥¼ ê°€ì§€ê³  ìˆë‹¤.
+ * ê³¼ì¼ì—ëŠ” ì‚¬ê³¼(Apple), ë³µìˆ­ì•„(Peach)ê°€ ìˆê³ ,
+ * ìŒë£Œì—ëŠ” ì½œë¼(Cock), ì‚¬ì´ë‹¤(Cidar)ê°€ ìˆê³ ,
+ * ê³¼ìì—ëŠ” ë¹„ìŠ¤í‚·(Biscuit), ì¿ í‚¤(Cookie)ê°€ ìˆë‹¤.
+ * ì‚¬ê³¼ì™€ ë³µìˆ­ì•„ëŠ” ê°€ê²©ê³¼ ë‹¹ë„ë¥¼ ì…ë ¥ë°›ì•„ ê°ì²´ë¥¼ ìƒì„±í•˜ê³ ,
+ * ì½œë¼ì™€ ì‚¬ì´ë‹¤ëŠ” ê°€ê²©ê³¼ ìš©ëŸ‰ì„ ì…ë ¥ë°›ì•„ ê°ì²´ë¥¼ ìƒì„±í•˜ê³ ,
+ * ë¹„ìŠ¤í‚·ê³¼ ì¿ í‚¤ëŠ” ê°€ê²©ê³¼ ë¬´ê²Œë¥¼ ì…ë ¥ë°›ì•„ ê°ì²´ë¥¼ ìƒì„±í•œë‹¤.
  * 
- * À§ÀÇ Á¶°Ç¿¡ ¸Âµµ·Ï Å¬·¡½º¸¦ ±¸ÇöÇÏ±â
+ * ìœ„ì˜ ì¡°ê±´ì— ë§ë„ë¡ í´ë˜ìŠ¤ë¥¼ êµ¬í˜„í•˜ê¸°
  */
 
 class Food {
@@ -57,42 +57,42 @@ class Snack extends Food {
 class Apple extends Fruit {
 	Apple(int price, double brix) {
 		super(price, brix);
-		this.name = "»ç°ú";
+		this.name = "ì‚¬ê³¼";
 	}
 }
 
 class Peach extends Fruit {
 	Peach(int price, double brix) {
 		super(price, brix);
-		this.name = "º¹¼ş¾Æ";
+		this.name = "ë³µìˆ­ì•„";
 	}
 }
 
 class Cock extends Drink {
 	Cock(int price, int ml) {
 		super(price, ml);
-		this.name = "Äİ¶ó";
+		this.name = "ì½œë¼";
 	}
 }
 
 class Cidar extends Drink {
 	Cidar(int price, int ml) {
 		super(price, ml);
-		this.name = "»çÀÌ´Ù";
+		this.name = "ì‚¬ì´ë‹¤";
 	}
 }
 
 class Biscuit extends Snack {
 	Biscuit(int price, int gram) {
 		super(price, gram);
-		this.name = "ºñ½ºÅ¶";
+		this.name = "ë¹„ìŠ¤í‚·";
 	}
 }
 
 class Cookie extends Snack {
 	Cookie(int price, int gram) {
 		super(price, gram);
-		this.name = "ÄíÅ°";
+		this.name = "ì¿ í‚¤";
 	}
 }
 
@@ -115,16 +115,16 @@ class Buyer2 {
 	
 	void buy(Food food) {
 		if (cnt > cart.length) {
-			System.out.println("Àå¹Ù±¸´Ï °¡µæÂü");
+			System.out.println("ì¥ë°”êµ¬ë‹ˆ ê°€ë“ì°¸");
 			return;
 		}
 		
 		if (money < food.price) {
-			System.out.println("ÀÜ¾× ºÎÁ·");
+			System.out.println("ì”ì•¡ ë¶€ì¡±");
 			return;
 		}
 		
-		System.out.println("¹°Ç°¸í : " + food.name + ", °¡°İ : " + food.price);
+		System.out.println("ë¬¼í’ˆëª… : " + food.name + ", ê°€ê²© : " + food.price);
 		this.money -= food.price;
 		this.point += food.point;
 		cart[cnt++] = food;
@@ -149,7 +149,7 @@ class Buyer2 {
 		int snack_money = 0;
 		
 		for (int i = 0; i < cart.length; i++) {
-			String item = cart[i].name + " " + cart[i].price + "¿ø\n";
+			String item = cart[i].name + " " + cart[i].price + "ì›\n";
 			int price = cart[i].price;
 			food_list += item;
 			
@@ -166,44 +166,44 @@ class Buyer2 {
 		}
 		food_money = fruit_money + drink_money + snack_money;
 		
-		System.out.println("½Ä·áÇ°ÀÇ °¹¼ö : " + fruitcnt);
-		System.out.println("½Ä·áÇ° ¸ñ·Ï");
+		System.out.println("ì‹ë£Œí’ˆì˜ ê°¯ìˆ˜ : " + fruitcnt);
+		System.out.println("ì‹ë£Œí’ˆ ëª©ë¡");
 		System.out.println(food_list);
-		System.out.println("½Ä·áÇ° ±¸¸Å ±İ¾× : " + food_money);
+		System.out.println("ì‹ë£Œí’ˆ êµ¬ë§¤ ê¸ˆì•¡ : " + food_money);
 		System.out.println();
-		System.out.println("°úÀÏÀÇ °¹¼ö : " + fruitcnt);
-		System.out.println("°úÀÏ ¸ñ·Ï");
+		System.out.println("ê³¼ì¼ì˜ ê°¯ìˆ˜ : " + fruitcnt);
+		System.out.println("ê³¼ì¼ ëª©ë¡");
 		System.out.println(fruit_list);
-		System.out.println("°úÀÏ ±¸¸Å ±İ¾× : " + fruit_money);
+		System.out.println("ê³¼ì¼ êµ¬ë§¤ ê¸ˆì•¡ : " + fruit_money);
 		System.out.println();
-		System.out.println("À½·áÀÇ °¹¼ö : " + drinkcnt);
-		System.out.println("À½·á ¸ñ·Ï");
+		System.out.println("ìŒë£Œì˜ ê°¯ìˆ˜ : " + drinkcnt);
+		System.out.println("ìŒë£Œ ëª©ë¡");
 		System.out.println(drink_list);
-		System.out.println("À½·á ±¸¸Å ±İ¾× : " + drink_money);
+		System.out.println("ìŒë£Œ êµ¬ë§¤ ê¸ˆì•¡ : " + drink_money);
 		System.out.println();
-		System.out.println("°úÀÚÀÇ °¹¼ö : " + snackcnt);
-		System.out.println("°úÀÚ ¸ñ·Ï");
+		System.out.println("ê³¼ìì˜ ê°¯ìˆ˜ : " + snackcnt);
+		System.out.println("ê³¼ì ëª©ë¡");
 		System.out.println(snack_list);
-		System.out.println("°úÀÚ ±¸¸Å ±İ¾× : " + snack_money);
+		System.out.println("ê³¼ì êµ¬ë§¤ ê¸ˆì•¡ : " + snack_money);
 		System.out.println();
-		System.out.println("³²Àº ±İ¾× : " + money + ", º¸À¯ Æ÷ÀÎÆ® : " + point);
+		System.out.println("ë‚¨ì€ ê¸ˆì•¡ : " + money + ", ë³´ìœ  í¬ì¸íŠ¸ : " + point);
 	}
 }
 
 /*
- * Buyer2 Å¬·¡½º ±¸ÇöÇÏ±â
- * 	¸â¹öº¯¼ö : money, point, Food[] cart, fruitcnt, drinkcnt, snackcnt, cnt
- * 	¸Ş¼­µå : void buy(Food)
- * 		±â´É : ¹°°Ç ±¸ÀÔ½Ã¸¶´Ù °¡°İ¸¸Å­ money Â÷°¨ÇÏ°í, Æ÷ÀÎÆ® Áõ°¡
- * 			±¸ÀÔÇÏ·Á´Â ¹°°ÇÀÇ °ªÀÌ Å« °æ¿ì´Â "ÀÜ¾× ºÎÁ·" ¸Ş¼¼Áö¸¦ Ãâ·ÂÇÏ±â buy ¸Ş¼­µå Á¾·áÇÏ±â.
- * 			±¸ÀÔ½Ã´Â ±¸ÀÔÇÑ ¹°Ç°¸í°ú °¡°İÀ» Ãâ·Â. Àå¹Ù±¸´Ï¿¡ ¹°°ÇÀ» ³Ö¾îÁÖ°í,
- * 			fruitcnt, drinkcnt, snackcnt, cnt À» Áõ°¡½ÃÅ°±â
- *  ¸Ş¼­µå : void summary()
- *  		±â´É : Àå¹Ù±¸´Ï¿¡ ÀÖ´Â ¹°°ÇÀ» Á¶È¸ÇÏ¿© ¹°°Ç ¸ñ·Ï°ú ÃÑ°¡°İ, ÇöÀçÀÇ º¸³Ê½º Æ÷ÀÎÆ®¸¦ Ãâ·ÂÇÏ±â
- *  		°úÀÏÀÇ °¹¼ö, °úÀÏ ¸ñ·Ï, °úÀÏ ±¸¸Å ±İ¾×
- *  		À½·áÀÇ °¹¼ö, À½·á ¸ñ·Ï, À½·á ±¸¸Å ±İ¾×
- *  		°úÀÚÀÇ °¹¼ö, °úÀÚ ¸ñ·Ï, °úÀÚ ±¸¸Å ±İ¾×
- *  		³²Àº ±İ¾×°ú º¸À¯ÇÑ Æ÷ÀÎÆ® Ãâ·ÂÇÏ±â
+ * Buyer2 í´ë˜ìŠ¤ êµ¬í˜„í•˜ê¸°
+ * 	ë©¤ë²„ë³€ìˆ˜ : money, point, Food[] cart, fruitcnt, drinkcnt, snackcnt, cnt
+ * 	ë©”ì„œë“œ : void buy(Food)
+ * 		ê¸°ëŠ¥ : ë¬¼ê±´ êµ¬ì…ì‹œë§ˆë‹¤ ê°€ê²©ë§Œí¼ money ì°¨ê°í•˜ê³ , í¬ì¸íŠ¸ ì¦ê°€
+ * 			êµ¬ì…í•˜ë ¤ëŠ” ë¬¼ê±´ì˜ ê°’ì´ í° ê²½ìš°ëŠ” "ì”ì•¡ ë¶€ì¡±" ë©”ì„¸ì§€ë¥¼ ì¶œë ¥í•˜ê¸° buy ë©”ì„œë“œ ì¢…ë£Œí•˜ê¸°.
+ * 			êµ¬ì…ì‹œëŠ” êµ¬ì…í•œ ë¬¼í’ˆëª…ê³¼ ê°€ê²©ì„ ì¶œë ¥. ì¥ë°”êµ¬ë‹ˆì— ë¬¼ê±´ì„ ë„£ì–´ì£¼ê³ ,
+ * 			fruitcnt, drinkcnt, snackcnt, cnt ì„ ì¦ê°€ì‹œí‚¤ê¸°
+ *  ë©”ì„œë“œ : void summary()
+ *  		ê¸°ëŠ¥ : ì¥ë°”êµ¬ë‹ˆì— ìˆëŠ” ë¬¼ê±´ì„ ì¡°íšŒí•˜ì—¬ ë¬¼ê±´ ëª©ë¡ê³¼ ì´ê°€ê²©, í˜„ì¬ì˜ ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ë¥¼ ì¶œë ¥í•˜ê¸°
+ *  		ê³¼ì¼ì˜ ê°¯ìˆ˜, ê³¼ì¼ ëª©ë¡, ê³¼ì¼ êµ¬ë§¤ ê¸ˆì•¡
+ *  		ìŒë£Œì˜ ê°¯ìˆ˜, ìŒë£Œ ëª©ë¡, ìŒë£Œ êµ¬ë§¤ ê¸ˆì•¡
+ *  		ê³¼ìì˜ ê°¯ìˆ˜, ê³¼ì ëª©ë¡, ê³¼ì êµ¬ë§¤ ê¸ˆì•¡
+ *  		ë‚¨ì€ ê¸ˆì•¡ê³¼ ë³´ìœ í•œ í¬ì¸íŠ¸ ì¶œë ¥í•˜ê¸°
  */
 
 public class FoodEx1 {

@@ -1,20 +1,20 @@
 package chap7;
 
 /*
- * ÀüÀÚÁ¦Ç°(Product) Å¬·¡½º
- * 	º¯¼ö : °¡°Ý, Æ÷ÀÎÆ®
- * »ý¼ºÀÚ : °¡°ÝÀ» ¸Å°³ º¯¼ö·Î °¡Áø Å¬·¡½º
- * 		°¡°ÝÀ» ÀúÀåÇÏ°í, Æ÷ÀÎÆ®´Â °¡°ÝÀÇ 1/10·Î Á¤ÇÑ´Ù.
+ * ì „ìžì œí’ˆ(Product) í´ëž˜ìŠ¤
+ * 	ë³€ìˆ˜ : ê°€ê²©, í¬ì¸íŠ¸
+ * ìƒì„±ìž : ê°€ê²©ì„ ë§¤ê°œ ë³€ìˆ˜ë¡œ ê°€ì§„ í´ëž˜ìŠ¤
+ * 		ê°€ê²©ì„ ì €ìž¥í•˜ê³ , í¬ì¸íŠ¸ëŠ” ê°€ê²©ì˜ 1/10ë¡œ ì •í•œë‹¤.
  * 
- * Tv Å¬·¡½º
- * 	»ý¼ºÀÚ : ¸Å°³º¯¼ö ¾ø´Â »ý¼ºÀÚ ÇÑ°³¸¸ ÀÖ´Ù.
- * 	¸Þ¼­µå : toString() ¸Þ¼­µå
- * 			"Tv" ¸®ÅÏÇÑ´Ù.
+ * Tv í´ëž˜ìŠ¤
+ * 	ìƒì„±ìž : ë§¤ê°œë³€ìˆ˜ ì—†ëŠ” ìƒì„±ìž í•œê°œë§Œ ìžˆë‹¤.
+ * 	ë©”ì„œë“œ : toString() ë©”ì„œë“œ
+ * 			"Tv" ë¦¬í„´í•œë‹¤.
  * 
- * Computer Å¬·¡½º
- * 	»ý¼ºÀÚ : ¸Å°³º¯¼ö ¾ø´Â »ý¼ºÀÚ ÇÑ°³¸¸ ÀÖ´Ù.
- * 	¸Þ¼­µå : toString() ¸Þ¼­µå
- * 			"Computer" ¸®ÅÏÇÑ´Ù.
+ * Computer í´ëž˜ìŠ¤
+ * 	ìƒì„±ìž : ë§¤ê°œë³€ìˆ˜ ì—†ëŠ” ìƒì„±ìž í•œê°œë§Œ ìžˆë‹¤.
+ * 	ë©”ì„œë“œ : toString() ë©”ì„œë“œ
+ * 			"Computer" ë¦¬í„´í•œë‹¤.
  */
 
 class Product {
@@ -48,11 +48,11 @@ class Computer extends Product {
 }
 
 /*
- * °í°´ (Buyer) Å¬·¡½º
- * 	º¯¼ö : int money, int point, Product[2] cart
- * 	¸Þ¼­µå : void buy(Product)
- * 		Á¦Ç°À» ±¸¸ÅÇÒ¶§ ¸¶´Ù ÇöÀç Çö±Ý¿¡¼­ °¡°Ý¸¸Å­ Â÷°¨µÇ°í, Æ÷ÀÎÆ®´Â ½×ÀÎ´Ù.
- * 		ÇØ´ç Á¦Ç°À» cart¿¡ ÀúÀåÇÔ.
+ * ê³ ê° (Buyer) í´ëž˜ìŠ¤
+ * 	ë³€ìˆ˜ : int money, int point, Product[2] cart
+ * 	ë©”ì„œë“œ : void buy(Product)
+ * 		ì œí’ˆì„ êµ¬ë§¤í• ë•Œ ë§ˆë‹¤ í˜„ìž¬ í˜„ê¸ˆì—ì„œ ê°€ê²©ë§Œí¼ ì°¨ê°ë˜ê³ , í¬ì¸íŠ¸ëŠ” ìŒ“ì¸ë‹¤.
+ * 		í•´ë‹¹ ì œí’ˆì„ cartì— ì €ìž¥í•¨.
  */
 
 class Buyer {
@@ -68,12 +68,12 @@ class Buyer {
 	
 	void buy (Product p) {
 		if (count > cart.length) {
-			System.out.println("Ä«Æ®°¡ ²Ë Ã¡½À´Ï´Ù!");
+			System.out.println("ì¹´íŠ¸ê°€ ê½‰ ì°¼ìŠµë‹ˆë‹¤!");
 			return;
 		}
 		
 		if (money < p.price) {
-			System.out.println("µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù!");
+			System.out.println("ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤!");
 			return;
 		}
 		
@@ -82,12 +82,12 @@ class Buyer {
 		sum += money;
 		cart[count++] = p;
 		
-		System.out.println(p + "±¸ÀÔ!");
+		System.out.println(p + "êµ¬ìž…!");
 	}
 	
 	void summary() {
-		System.out.println("ÃÑ ±¸¸Å ±Ý¾× : " + sum);
-		System.out.print("±¸¸Å ¸ñ·Ï : ");
+		System.out.println("ì´ êµ¬ë§¤ ê¸ˆì•¡ : " + sum);
+		System.out.print("êµ¬ë§¤ ëª©ë¡ : ");
 		for (int i = 0; i < cart.length; i++) {
 			System.out.print(cart[i]);
 			if (i != cart.length - 1) {
@@ -106,10 +106,10 @@ public class ProductEx1 {
 		
 		b.buy(t);
 		b.buy(c);
-		System.out.println("±¸¸Å ÈÄ ÀÜ¾× : " + b.money);
-		System.out.println("±¸¸Å ÈÄ Æ÷ÀÎÆ® : " + b.point);
-		b.summary(); // ÃÑ ±¸¸Å±Ý¾× : 450
-					// ±¸¸Å¸ñ·Ï : Tv, Computer
+		System.out.println("êµ¬ë§¤ í›„ ìž”ì•¡ : " + b.money);
+		System.out.println("êµ¬ë§¤ í›„ í¬ì¸íŠ¸ : " + b.point);
+		b.summary(); // ì´ êµ¬ë§¤ê¸ˆì•¡ : 450
+					// êµ¬ë§¤ëª©ë¡ : Tv, Computer
 	}
 
 }

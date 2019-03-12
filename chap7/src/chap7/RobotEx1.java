@@ -1,14 +1,14 @@
 package chap7;
 
 /*
- * Robot ÀÇ Á¾·ù¿¡´Â DanceRobot, SingRobot, DrawRobot ÀÌ ÀÖ´Ù
- * Robot Å¬·¡½º´Â action ¸Å¼­µå¸¦ ¸â¹ö·Î °¡Áø´Ù.
- * DanceRobot ÀÎ °æ¿ì´Â ÃãÀ» Ãß°í,
- * SingRobot ÀÎ °æ¿ì´Â ³ë·¡¸¦ ºÎ¸£°í,
- * DrawRobot ÀÎ °æ¿ì´Â ±×¸²À» ±×¸°´Ù.
+ * Robot ì˜ ì¢…ë¥˜ì—ëŠ” DanceRobot, SingRobot, DrawRobot ì´ ìˆë‹¤
+ * Robot í´ë˜ìŠ¤ëŠ” action ë§¤ì„œë“œë¥¼ ë©¤ë²„ë¡œ ê°€ì§„ë‹¤.
+ * DanceRobot ì¸ ê²½ìš°ëŠ” ì¶¤ì„ ì¶”ê³ ,
+ * SingRobot ì¸ ê²½ìš°ëŠ” ë…¸ë˜ë¥¼ ë¶€ë¥´ê³ ,
+ * DrawRobot ì¸ ê²½ìš°ëŠ” ê·¸ë¦¼ì„ ê·¸ë¦°ë‹¤.
  * 
- * Robot Å¬·¡½º¸¦ »ı¼ºÇÒ ¶§´Â Robot ÀÇ Á¾·ù¸¦ ¹Ş´Â´Ù.
- * action ¸Ş¼­µå´Â Ãß»ó¸Ş¼­µå¸¦ ±¸ÇöÇÏ±â.
+ * Robot í´ë˜ìŠ¤ë¥¼ ìƒì„±í•  ë•ŒëŠ” Robot ì˜ ì¢…ë¥˜ë¥¼ ë°›ëŠ”ë‹¤.
+ * action ë©”ì„œë“œëŠ” ì¶”ìƒë©”ì„œë“œë¥¼ êµ¬í˜„í•˜ê¸°.
  */
 
 abstract class Robot {
@@ -22,12 +22,12 @@ abstract class Robot {
 class DanceRobot extends Robot {
 	
 	DanceRobot() {
-		super("´í½º ·Îº¿");
+		super("ëŒ„ìŠ¤ ë¡œë´‡");
 	}
 
 	@Override
 	void action() {
-		System.out.println(type + " : ÃãÀ» Ãá´Ù");
+		System.out.println(type + " : ì¶¤ì„ ì¶˜ë‹¤");
 	}
 	
 }
@@ -35,12 +35,12 @@ class DanceRobot extends Robot {
 class SingRobot extends Robot {
 	
 	SingRobot() {
-		super("½Ì ·Îº¿");
+		super("ì‹± ë¡œë´‡");
 	}
 
 	@Override
 	void action() {
-		System.out.println(type + " : ³ë·¡¸¦ ºÎ¸¥´Ù");
+		System.out.println(type + " : ë…¸ë˜ë¥¼ ë¶€ë¥¸ë‹¤");
 	}
 	
 }
@@ -48,12 +48,12 @@ class SingRobot extends Robot {
 class DrawRobot extends Robot {
 	
 	DrawRobot() {
-		super("µå·Î¿ì ·Îº¿");
+		super("ë“œë¡œìš° ë¡œë´‡");
 	}
 
 	@Override
 	void action() {
-		System.out.println(type + " : ±×¸²À» ±×¸°´Ù");
+		System.out.println(type + " : ê·¸ë¦¼ì„ ê·¸ë¦°ë‹¤");
 	}
 	
 }

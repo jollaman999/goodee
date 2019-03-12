@@ -23,7 +23,7 @@ public class SuperEx1 extends Object {
 	public static void main(String[] args) {
 		Child c = new Child();
 		c.method();
-		// super ÂüÁ¶º¯¼ö ¾Æ¿ëºÒ°¡. main ¸Þ¼­µå´Â static ¸â¹öÀÓ.
+		// super ì°¸ì¡°ë³€ìˆ˜ ì•„ìš©ë¶ˆê°€. main ë©”ì„œë“œëŠ” static ë©¤ë²„ìž„.
 		// System.out.println(super.toString());
 	}
 

@@ -1,28 +1,28 @@
 package chap7;
 
 /*
- * ÃÊ±âÈ­ ºí·° ¿¹Á¦
+ * ì´ˆê¸°í™” ë¸”ëŸ­ ì˜ˆì œ
  */
 
 public class InitEx1 {
-	static int cv;	// Å¬·¡½º º¯¼ö
-	int iv;			// ÀÎ½ºÅÏ½º º¯¼ö
-	InitEx1() {		// »ı¼ºÀÚ
-		System.out.println("5. »ı¼ºÀÚ È£ÃâµÊ");
+	static int cv;	// í´ë˜ìŠ¤ ë³€ìˆ˜
+	int iv;			// ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜
+	InitEx1() {		// ìƒì„±ì
+		System.out.println("5. ìƒì„±ì í˜¸ì¶œë¨");
 	}
-	static {		// static(Å¬·¡½º) ÃÊ±âÈ­ ºí·°
+	static {		// static(í´ë˜ìŠ¤) ì´ˆê¸°í™” ë¸”ëŸ­
 		cv = (int) (Math.random() * 100);	// 0~99
-		System.out.println("1. static ÃÊ±âÈ­ ºí·° ½ÇÇà cv = " + cv);
+		System.out.println("1. static ì´ˆê¸°í™” ë¸”ëŸ­ ì‹¤í–‰ cv = " + cv);
 	}
 	{
-		System.out.println("4. ÀÎ½ºÅÏ½º ÃÊ±âÈ­ ºí·° ½ÇÇà. »ı¼ºÀÚ º¸´Ù ¸ÕÀú ½ÇÇàµÊ.");
+		System.out.println("4. ì¸ìŠ¤í„´ìŠ¤ ì´ˆê¸°í™” ë¸”ëŸ­ ì‹¤í–‰. ìƒì„±ì ë³´ë‹¤ ë¨¼ì € ì‹¤í–‰ë¨.");
 	}
 
 	public static void main(String[] args) {
-		System.out.println("2. main ¸Ş¼­µå ½ÃÀÛ");
-		System.out.println("3. main ¿¡¼­ init1 °´Ã¼ »ı¼ºÇÔ");
+		System.out.println("2. main ë©”ì„œë“œ ì‹œì‘");
+		System.out.println("3. main ì—ì„œ init1 ê°ì²´ ìƒì„±í•¨");
 		InitEx1 init1 = new InitEx1();
-		System.out.println("6. main ¿¡¼­ init2 °´Ã¼ »ı¼ºÇÔ");
+		System.out.println("6. main ì—ì„œ init2 ê°ì²´ ìƒì„±í•¨");
 		InitEx1 init2 = new InitEx1();
 	}
 

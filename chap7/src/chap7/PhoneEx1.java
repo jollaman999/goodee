@@ -7,16 +7,16 @@ class Phone {
 		power = !power;
 	}
 	void send() {
-		if (power) System.out.println("ÀüÈ­ °É±â");
+		if (power) System.out.println("ì „í™” ê±¸ê¸°");
 	}
 	void receive() {
-		if (power) System.out.println("ÀüÈ­ ¹Þ±â");
+		if (power) System.out.println("ì „í™” ë°›ê¸°");
 	}
 }
 
 class SmartPhone extends Phone {
 	void setApp (String name) {
-		if (power) System.out.println(name + "¾Û ¼³Ä¡");
+		if (power) System.out.println(name + "ì•± ì„¤ì¹˜");
 	}
 }
 
@@ -27,7 +27,7 @@ public class PhoneEx1 {
 		sp.power();
 		sp.send();
 		sp.receive();
-		sp.setApp("°ÔÀÓ");
+		sp.setApp("ê²Œìž„");
 	}
 
 }

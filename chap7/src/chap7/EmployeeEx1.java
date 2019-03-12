@@ -1,24 +1,24 @@
 package chap7;
 
 abstract class Employee {
-	String type; // Á÷¿ø±¸ºĞ
-	String name; // ÀÌ¸§
+	String type; // ì§ì›êµ¬ë¶„
+	String name; // ì´ë¦„
 	
 	Employee(String type, String name) {
 		this.type = type;
 		this.name = name;
 	}
 	
-	abstract int getPay(); // ±Ş¿©
+	abstract int getPay(); // ê¸‰ì—¬
 }
 
-class FormalEmployee extends Employee { // Á¤±ÔÁ÷¿ø
-	String empNo; // Á÷¿ø¹øÈ£
-	String position; // Á÷±Ş
-	int salary; // ¿¬ºÀ
+class FormalEmployee extends Employee { // ì •ê·œì§ì›
+	String empNo; // ì§ì›ë²ˆí˜¸
+	String position; // ì§ê¸‰
+	int salary; // ì—°ë´‰
 	
 	FormalEmployee(String name, String empNo, int salary, String position) {
-		super("Á¤±Ô", name);
+		super("ì •ê·œ", name);
 		
 		this.empNo = empNo;
 		this.salary = salary;
@@ -31,12 +31,12 @@ class FormalEmployee extends Employee { // Á¤±ÔÁ÷¿ø
 	}
 }
 
-class InformalEmployee extends Employee { // ºñÁ¤±ÔÁ÷¿ø
-	String expireDate; // °è¾à¸¸·áÀÏ
-	int primaryPay; // ±âº»ÀÓ±İ
+class InformalEmployee extends Employee { // ë¹„ì •ê·œì§ì›
+	String expireDate; // ê³„ì•½ë§Œë£Œì¼
+	int primaryPay; // ê¸°ë³¸ì„ê¸ˆ
 	
 	InformalEmployee(String name, String expireDate, int primaryPay) {
-		super("ºñÁ¤±Ô", name);
+		super("ë¹„ì •ê·œ", name);
 		
 		this.expireDate = expireDate;
 		this.primaryPay = primaryPay;
@@ -55,12 +55,12 @@ class InformalEmployee extends Employee { // ºñÁ¤±ÔÁ÷¿ø
 	}
 }
 
-class TempEmployee extends InformalEmployee { // ÀÓ½ÃÁ÷¿ø
-	int timePay; // ½Ã°£´ç ÀÓ±İ
-	int empTime; // ±Ù¹«½Ã°£
+class TempEmployee extends InformalEmployee { // ì„ì‹œì§ì›
+	int timePay; // ì‹œê°„ë‹¹ ì„ê¸ˆ
+	int empTime; // ê·¼ë¬´ì‹œê°„
 	
 	TempEmployee(String name, String expireDate, int primaryPay, int empTime, int timePay) {
-		super("ÀÓ½Ã", name, expireDate, primaryPay);
+		super("ì„ì‹œ", name, expireDate, primaryPay);
 		
 		this.empTime = empTime;
 		this.timePay = timePay;
@@ -72,11 +72,11 @@ class TempEmployee extends InformalEmployee { // ÀÓ½ÃÁ÷¿ø
 	}
 }
 
-class InternEmployee extends InformalEmployee { // ÀÎÅÏ »ç¿ø
-	double payRate; // ÀÓ±İÁö±ŞÀ²
+class InternEmployee extends InformalEmployee { // ì¸í„´ ì‚¬ì›
+	double payRate; // ì„ê¸ˆì§€ê¸‰ìœ¨
 	
 	InternEmployee(String name, String expireDate, int primaryPay, double payRate) {
-		super("ÀÎÅÏ", name, expireDate, primaryPay);
+		super("ì¸í„´", name, expireDate, primaryPay);
 		
 		this.payRate = payRate;
 	}
@@ -92,13 +92,13 @@ public class EmployeeEx1 {
 	public static void main(String[] args) {
 		Employee[] emps = new Employee[4];
 		
-		emps[0] = new FormalEmployee("±èÁ¤±Ô", "1", 5000, "°úÀå");
-		emps[1] = new InformalEmployee("ÀÌºñÁ¤", "20191231", 1000);
-		emps[2] = new TempEmployee("¹ÚÀÓ½Ã", "20191231", 0, 1, 50);
-		emps[3] = new InternEmployee("±èÀÎÅÏ", "20191231", 2000, 0.8f);
+		emps[0] = new FormalEmployee("ê¹€ì •ê·œ", "1", 5000, "ê³¼ì¥");
+		emps[1] = new InformalEmployee("ì´ë¹„ì •", "20191231", 1000);
+		emps[2] = new TempEmployee("ë°•ì„ì‹œ", "20191231", 0, 1, 50);
+		emps[3] = new InternEmployee("ê¹€ì¸í„´", "20191231", 2000, 0.8f);
 		
 		for (Employee e : emps) {
-			System.out.println(e.type + "»ç¿ø :" + e.name + "ÀÇ ±Ş¿© : " + e.getPay());
+			System.out.println(e.type + "ì‚¬ì› :" + e.name + "ì˜ ê¸‰ì—¬ : " + e.getPay());
 		}
 	}
 

@@ -8,11 +8,11 @@ class Bike {
 	}
 	
 	String drive() {
-		return "Æä´ŞÀ» ¹â´Â´Ù.";
+		return "í˜ë‹¬ì„ ë°ŸëŠ”ë‹¤.";
 	}
 	
 	String stop() {
-		return "ºê·¹ÀÌÅ©¸¦ Àâ´Â´Ù.";
+		return "ë¸Œë ˆì´í¬ë¥¼ ì¡ëŠ”ë‹¤.";
 	}
 }
 
@@ -21,14 +21,14 @@ class AutoBike extends Bike {
 		super(wheel);
 	}
 	
-	@Override	// ¾î³ëÅ×ÀÌ¼Ç, ¿À¹ö¶óÀÌµù µÈ ¸Ş¼­µå·Î È®ÀÎ. ¿À¹ö¶óÀÌµù Á¶°ÇÀ» ¸¸Á·ÇÑ ¸Ş¼­µåÀÓ.
+	@Override	// ì–´ë…¸í…Œì´ì…˜, ì˜¤ë²„ë¼ì´ë”© ëœ ë©”ì„œë“œë¡œ í™•ì¸. ì˜¤ë²„ë¼ì´ë”© ì¡°ê±´ì„ ë§Œì¡±í•œ ë©”ì„œë“œì„.
 	String drive() {
-		return "½ÃÀÛ¹öÆ°À» ´©¸¥´Ù.";
+		return "ì‹œì‘ë²„íŠ¼ì„ ëˆ„ë¥¸ë‹¤.";
 	}
 	
 	@Override
 	String stop() {
-		return "¸ØÃã¹öÆ°À» ´©¸¥´Ù.";
+		return "ë©ˆì¶¤ë²„íŠ¼ì„ ëˆ„ë¥¸ë‹¤.";
 	}
 }
 
@@ -37,11 +37,11 @@ public class BikeEx1 {
 	public static void main(String[] args) {
 		AutoBike ab = new AutoBike(2);
 		System.out.println(ab.drive());
-		System.out.println(ab.wheel + "°³ÀÇ ¹ÙÄû°¡ ±¼·¯ °©´Ï´Ù.");
+		System.out.println(ab.wheel + "ê°œì˜ ë°”í€´ê°€ êµ´ëŸ¬ ê°‘ë‹ˆë‹¤.");
 		System.out.println(ab.stop());
 		Bike b = new Bike(4);
 		System.out.println(b.drive());
-		System.out.println(b.wheel + "°³ÀÇ ¹ÙÄû°¡ ±¼·¯ °©´Ï´Ù.");
+		System.out.println(b.wheel + "ê°œì˜ ë°”í€´ê°€ êµ´ëŸ¬ ê°‘ë‹ˆë‹¤.");
 		System.out.println(b.stop());
 	}
 
