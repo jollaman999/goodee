@@ -7,5 +7,6 @@ bin
 
 .idea
 *.iml
+out
 
 *.zip
